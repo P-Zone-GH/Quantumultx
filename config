@@ -84,13 +84,14 @@ server=/*.xiaomi.com/119.29.29.29
 ;direct/proxy/reject 则只能用本地图标，名字分别为 direct.png, proxy.png,reject.png 放置于 Images 文件夹下即可生效 (108*108 大小)
 
 [policy]
-static=🍎 苹果服务, direct, proxy, img-url= https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Apple.png
-static=💻 国外影视, proxy, direct, img-url= https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/ForeignMedia.png
-static=📽 国内视频, direct, proxy, img-url= https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/DomesticMedia.png
-static=🎬 YouTube, proxy, direct, img-url= https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/YouTube.png
-static=📺 Netflix, proxy, direct, img-url= https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Netflix_Letter.png
-static=🌏 国外网站, proxy,direct, img-url= https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Global.png
-static=🕹 终极清单,direct, proxy, img-url= https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Final.png
+static=🚀 节点选择, DIRECT, [SS] ShadowSocks, [Trojan] trojan-tcp, [VMess] vmess-ws-tls
+static=🍎 苹果服务, direct, 🚀 节点选择, img-url= https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Apple.png
+static=💻 国外影视, 🚀 节点选择, direct, img-url= https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/ForeignMedia.png
+static=📽 国内视频, direct, 🚀 节点选择, img-url= https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/DomesticMedia.png
+static=🎬 YouTube, 🚀 节点选择, direct, img-url= https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/YouTube.png
+static=📺 Netflix, 🚀 节点选择, direct, img-url= https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Netflix_Letter.png
+static=🌏 国外网站, 🚀 节点选择, direct, img-url= https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Global.png
+static=🕹 终极清单, direct, 🚀 节点选择, img-url= https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Final.png
 ;static= 🇭🇰️ 香港(正则示范), server-tag-regex= 香港|🇭🇰️|HK|Hong, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/HK.png
 
 #server-tag-regex 以及 resource-tag-regex 参数用于正则筛选来建立策略组
@@ -209,6 +210,13 @@ https://raw.githubusercontent.com/crossutility/Quantumult-X/master/server-comple
 ;trojan=192.168.1.1:443, password=pwd, over-tls=true, tls-host=example.com, tls-verification=true, fast-open=false, udp-relay=false, tag=trojan-tls-02
 
 
+shadowsocks=xray.p-zone.link:5896, method=chacha20-ietf-poly1305, password=a18c9c1a-30b4-49cc-967a-5b954982e83f, fast-open=ture, udp-relay=ture, tag=[SS] ShadowSocks
+
+trojan = xray.p-zone.link:6584, password=5f0491ab-ab23-4732-bd90-9beb0208f8b0, over-tls=true, tls-host=xray.p-zone.link, fast-open=true, udp-relay=true, tls-verification=true, tag=[Trojan] trojan-tcp
+
+vmess = xray.p-zone.link:6584, method=chacha20-ietf-poly1305, password=5f0491ab-ab23-4732-bd90-9beb0208f8b0, obfs=wss, obfs-host=xray.p-zone.link, obfs-uri=/vmessws, fast-open=true, udp-relay=true, tag=[VMess] vmess-ws-tls
+
+
 #本地分流规则(对于完全相同的某条规则，本地的将优先生效)
 [filter_local]
 ;user-agent, ?abc*, proxy
@@ -222,6 +230,7 @@ ip-cidr, 192.168.0.0/16, direct
 ip-cidr, 224.0.0.0/24, direct
 # 已采用 ip 池数据，因此注释掉 geoip cn
 ;geoip, cn, direct
+host, qxzy.top, 🚀 节点选择
 
 #不在上述规则中(远程以及本地)的剩余请求，将走final 指定的节点/策略，这里即是 → 🕹 终极清单, 请根据自己的需求来选择直连或节点、策略
 final, 🕹 终极清单
@@ -229,6 +238,9 @@ final, 🕹 终极清单
 
 #本地复写规则
 [rewrite_local]
+#AcFun获取cookie
+^https:\/\/api\-ipv6\.app\.acfun\.cn\/rest\/app\/user\/personalInfo url script-request-header https://raw.githubusercontent.com/chavyleung/scripts/master/acfun/acfun.cookie.js
+
 
 
 [task_local]
