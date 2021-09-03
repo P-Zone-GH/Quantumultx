@@ -76,19 +76,6 @@ server=/*.xiaomi.com/119.29.29.29
 ;address=/example6.com/[2001:8d3:8d3:8d3:8d3:8d3:8d3:8d3]
 
 
-
-[task_local]
-;任务模块，可用于签到,天气话费查询等
-;js文件放于iCloud或者本机的Quantumult X/Scripts 路径下。TF版本可直接使用远程js链接
-
-2 12 * * * sample.js, tag=本地示范(左滑编辑，右滑执行), img-url=https://raw.githubusercontent.com/crossutility/Quantumult-X/master/quantumult-x.png
-13 12 * * * https://raw.githubusercontent.com/crossutility/Quantumult-X/master/sample-task.js, tag=远程示范(点击缓存/更新脚本), img-url=https://raw.githubusercontent.com/crossutility/Quantumult-X/master/quantumult-x.png
-;从 “分” 开始的5位cron 写法，具体 cron 表达式可自行 Google
-;比如上述语句 代表每天 12 点 2 分，自动执行一次;
-;tag参数为 task 命名标识;
-;img-url参数用于指定 task 的图标(108*108)
-
-
 #以下为策略组[policy]部分
 # static 策略组中，你需要手动选择想要的节点/策略组。
 # available 策略组将按顺序选择你列表中第一个可用的节点。
@@ -103,9 +90,9 @@ static=💻 国外影视, proxy, direct, img-url= https://raw.githubusercontent.
 static=📽 国内视频, direct, proxy, img-url= https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/DomesticMedia.png
 static=🎬 YouTube, proxy, direct, img-url= https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/YouTube.png
 static=📺 Netflix, proxy, direct, img-url= https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Netflix_Letter.png
-static=🌏 国外网站, proxy,direct,🇭🇰️ 香港(正则示范), img-url= https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Global.png
+static=🌏 国外网站, proxy,direct, img-url= https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Global.png
 static=🕹 终极清单,direct, proxy, img-url= https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Final.png
-static= 🇭🇰️ 香港(正则示范), server-tag-regex= 香港|🇭🇰️|HK|Hong, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/HK.png
+;static= 🇭🇰️ 香港(正则示范), server-tag-regex= 香港|🇭🇰️|HK|Hong, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/HK.png
 
 #server-tag-regex 以及 resource-tag-regex 参数用于正则筛选来建立策略组
 #具体可参见教程部分: https://shrtm.nu/DAFP
@@ -122,16 +109,6 @@ static= 🇭🇰️ 香港(正则示范), server-tag-regex= 香港|🇭🇰️|H
 # update-interval 为更新时间参数，单位 秒, 默认更新时间为 24*60*60=86400 秒，也就是24小时.
 # opt-parser=true/false 用于控制是否对本订阅 开启资源解析器，不写或者 false 表示不启用解析器;
 
-#服务器远程订阅
-[server_remote]
-#远程服务器订阅模块，可直接订阅SSR，SS链接，以及Quantumult X格式的vmess/trojan/https订阅
-#其它格式可用 opt-parser 参数开启解析器导入使用
-#img-url参数用于指定图标，格式要求同样为 108*108 的 png 图片，可远程，可本地
-https://raw.githubusercontent.com/crossutility/Quantumult-X/master/server.txt#rename=[香港], tag=示范(请先导入自己订阅/节点), update-interval=86400, opt-parser=true,  img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Quantumult_X.png, enabled=true
-https://raw.githubusercontent.com/crossutility/Quantumult-X/master/server-complete.txt, tag=示范(导入后更新并删除示范),  img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Quantumult_X.png, enabled=true
-
-#支持本地/iCloud的节点文件，位于Quantumult X/Profiles路径下
-;servers.txt, tag=本地服务器, img-url=https://raw.githubusercontent.com/crossutility/Quantumult-X/master/quantumult-x.png, enabled=false
 
 #规则分流远程订阅
 [filter_remote]
@@ -183,6 +160,19 @@ https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Rewrit
 
 #支持本地/iCloud的复写规则文件，位于Quantumult X/Profiles路径下
 ;rewrite.txt, tag=本地复写, opt-parser=false, enabled=false
+
+
+#服务器远程订阅
+[server_remote]
+#远程服务器订阅模块，可直接订阅SSR，SS链接，以及Quantumult X格式的vmess/trojan/https订阅
+#其它格式可用 opt-parser 参数开启解析器导入使用
+#img-url参数用于指定图标，格式要求同样为 108*108 的 png 图片，可远程，可本地
+https://raw.githubusercontent.com/crossutility/Quantumult-X/master/server.txt#rename=[香港], tag=示范(请先导入自己订阅/节点), update-interval=86400, opt-parser=true,  img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Quantumult_X.png, enabled=true
+https://raw.githubusercontent.com/crossutility/Quantumult-X/master/server-complete.txt, tag=示范(导入后更新并删除示范),  img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Quantumult_X.png, enabled=true
+
+#支持本地/iCloud的节点文件，位于Quantumult X/Profiles路径下
+;servers.txt, tag=本地服务器, img-url=https://raw.githubusercontent.com/crossutility/Quantumult-X/master/quantumult-x.png, enabled=false
+
 
 # 本地服务器部分
 [server_local]
@@ -241,12 +231,25 @@ final, 🕹 终极清单
 #本地复写规则
 [rewrite_local]
 
+
+[task_local]
+;任务模块，可用于签到,天气话费查询等
+;js文件放于iCloud或者本机的Quantumult X/Scripts 路径下。也可直接使用远程js链接
+
+2 12 * * * sample.js, tag=本地示范(左滑编辑，右滑执行), img-url=https://raw.githubusercontent.com/crossutility/Quantumult-X/master/quantumult-x.png
+13 12 * * * https://raw.githubusercontent.com/crossutility/Quantumult-X/master/sample-task.js, tag=远程示范(点击缓存/更新脚本), img-url=https://raw.githubusercontent.com/crossutility/Quantumult-X/master/quantumult-x.png
+;从 “分” 开始的5位cron 写法，具体 cron 表达式可自行 Google
+;比如上述语句 代表每天 12 点 2 分，自动执行一次;
+;tag参数为 task 命名标识;
+;img-url参数用于指定 task 的图标(108*108)
+
+
 #以下为证书&主机名部分
 [mitm]
 ;以下模块去掉;才生效
 ;请自行在 APP 的UI中生成证书 并安装&信任
 ;skip_validating_cert = false
 ;force_sni_domain_name = false
-;hostname = *.example.com, *.sample.com
-;passphrase = 
-;p12 = 
+hostname = *googlevideo.com, *.acfun.cn
+passphrase = DA82BFC1
+p12 = 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
