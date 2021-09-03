@@ -1,0 +1,133 @@
+[general]
+excluded_routes=192.168.0.0/16, 172.16.0.0/12, 100.64.0.0/10, 10.0.0.0/8
+geo_location_checker=http://ip-api.com/json/?lang=zh-CN, https://github.com/KOP-XIAO/QuantumultX/raw/master/Scripts/IP_API.js
+network_check_url=http://www.baidu.com/
+server_check_url=http://www.gstatic.com/generate_204
+resource_parser_url = https://raw.githubusercontent.com/KOP-XIAO/QuantumultX/master/Scripts/resource-parser.js
+
+[dns]
+server=119.29.29.29
+server=223.5.5.5
+server=1.0.0.1
+server=8.8.8.8
+;指定的 dns服务器
+server=114.114.114.114
+server=202.141.176.93 
+server=202.141.178.13
+server=117.50.10.10
+server=223.5.5.5
+server=119.29.29.29:53
+server=119.28.28.28
+server=202.103.24.68
+server=211.137.58.20
+
+[policy]
+static=🚀 节点选择, DIRECT, [Trojan] trojan-tcp, [VMess] vmess-ws-tls
+static=🌍 国外媒体, 🚀 节点选择, 🎯 全球直连,  img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/GlobalMedia.png
+static=📲 电报信息, 🚀 节点选择, 🎯 全球直连, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Telegram.png
+static=Ⓜ️ 微软服务, 🎯 全球直连, 🚀 节点选择, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Microsoft.png
+static=🍎 苹果服务, 🚀 节点选择, 🎯 全球直连, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Apple.png
+static=📢 谷歌FCM, 🚀 节点选择, 🎯 全球直连
+static=🎯 全球直连, DIRECT, 🚀 节点选择, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Direct.png
+static=🛑 全球拦截, REJECT, DIRECT, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Advertising.png
+static=🍃 应用净化, REJECT, DIRECT
+static=🐟 漏网之鱼, 🚀 节点选择, 🎯 全球直连, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Final.png
+
+[server_remote]
+
+[filter_remote]
+https://pub-api-1.bianyuan.xyz/getruleset?type=2&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvTG9jYWxBcmVhTmV0d29yay5saXN0&group=8J-OryDlhajnkIPnm7Tov54, tag=🎯 全球直连, enabled=true
+https://pub-api-1.bianyuan.xyz/getruleset?type=2&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvVW5CYW4ubGlzdA&group=8J-OryDlhajnkIPnm7Tov54, tag=🎯 全球直连, enabled=true
+https://pub-api-1.bianyuan.xyz/getruleset?type=2&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvQmFuQUQubGlzdA&group=8J-bkSDlhajnkIPmi6bmiKo, tag=🛑 全球拦截, enabled=true
+https://pub-api-1.bianyuan.xyz/getruleset?type=2&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvQmFuUHJvZ3JhbUFELmxpc3Q&group=8J-NgyDlupTnlKjlh4DljJY, tag=🍃 应用净化, enabled=true
+https://pub-api-1.bianyuan.xyz/getruleset?type=2&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvUnVsZXNldC9Hb29nbGVGQ00ubGlzdA&group=8J-ToiDosLfmrYxGQ00, tag=📢 谷歌FCM, enabled=true
+https://pub-api-1.bianyuan.xyz/getruleset?type=2&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvR29vZ2xlQ04ubGlzdA&group=8J-OryDlhajnkIPnm7Tov54, tag=🎯 全球直连, enabled=true
+https://pub-api-1.bianyuan.xyz/getruleset?type=2&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvTWljcm9zb2Z0Lmxpc3Q&group=4pOC77iPIOW-rui9r-acjeWKoQ, tag=Ⓜ️ 微软服务, enabled=true
+https://pub-api-1.bianyuan.xyz/getruleset?type=2&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvQXBwbGUubGlzdA&group=8J-NjiDoi7nmnpzmnI3liqE, tag=🍎 苹果服务, enabled=true
+https://pub-api-1.bianyuan.xyz/getruleset?type=2&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvVGVsZWdyYW0ubGlzdA&group=8J-TsiDnlLXmiqXkv6Hmga8, tag=📲 电报信息, enabled=true
+https://pub-api-1.bianyuan.xyz/getruleset?type=2&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvUHJveHlNZWRpYS5saXN0&group=8J-MjSDlm73lpJblqpLkvZM, tag=🌍 国外媒体, enabled=true
+https://pub-api-1.bianyuan.xyz/getruleset?type=2&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvUHJveHlMaXRlLmxpc3Q&group=8J-agCDoioLngrnpgInmi6k, tag=🚀 节点选择, enabled=true
+https://pub-api-1.bianyuan.xyz/getruleset?type=2&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvQ2hpbmFEb21haW4ubGlzdA&group=8J-OryDlhajnkIPnm7Tov54, tag=🎯 全球直连, enabled=true
+https://pub-api-1.bianyuan.xyz/getruleset?type=2&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvQ2hpbmFDb21wYW55SXAubGlzdA&group=8J-OryDlhajnkIPnm7Tov54, tag=🎯 全球直连, enabled=true
+
+[rewrite_remote]
+https://raw.githubusercontent.com/Orz-3/QuantumultX/master/JS_GetCookie.conf, tag=Qrz-3获取cookies, update-interval=604800, opt-parser=true, enabled=false
+https://service.2ti.st/QuanX/Rewrite/jd_tb_price.conf, tag=比价, update-interval=604800, opt-parser=false, enabled=true
+https://gitee.com/chavyleung/scripts/raw/master/box/rewrite/boxjs.rewrite.quanx.conf, tag=BoxJs, update-interval=86400, opt-parser=false, enabled=true
+
+
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Rewrite/General.conf, tag=神机复写(😄️通用), update-interval=86400, opt-parser=false, enabled=true
+
+
+;Youtube premium 会员请勿开启此条
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Rewrite/Block/YouTubeAds.conf, tag=神机复写(🈲YouTube-AD), update-interval=86400, opt-parser=true, enabled=true
+
+[server_local]
+shadowsocks=xray.p-zone.link:5896, method=chacha20-ietf-poly1305, password=a18c9c1a-30b4-49cc-967a-5b954982e83f, fast-open=ture, udp-relay=ture, tag=[SS] ShadowSocks
+
+trojan = xray.p-zone.link:6584, password=5f0491ab-ab23-4732-bd90-9beb0208f8b0, over-tls=true, tls-host=xray.p-zone.link, fast-open=true, udp-relay=true, tls-verification=true, tag=[Trojan] trojan-tcp
+
+vmess = xray.p-zone.link:6584, method=chacha20-ietf-poly1305, password=5f0491ab-ab23-4732-bd90-9beb0208f8b0, obfs=wss, obfs-host=xray.p-zone.link, obfs-uri=/vmessws, fast-open=true, udp-relay=true, tag=[VMess] vmess-ws-tls
+
+
+[filter_local]
+host, qxzy.top, 🚀 节点选择
+user-agent, bianyuan.xyz, 🚀 节点选择
+GEOIP,CN,🎯 全球直连
+FINAL,🐟 漏网之鱼
+
+[task_local]
+2 9 * * * https://qxnav.com/rules/QuantumultX/js/jd_bean_change.js, tag=京豆变动通知, img-url=https://qxnav.com/rules/QuantumultX/img/jd.png, enabled=true
+55 23 * * * https://qxnav.com/rules/QuantumultX/js/zwf234/jd_unsubscribe.js, tag=取关京东店铺商品, img-url=https://qxnav.com/rules/QuantumultX/img/jd.png, enabled=true
+1 0-23/1 * 6 * https://qxnav.com/rules/QuantumultX/js/zwf234/jd_SplitRedPacket.js, tag=京东天降红包, img-url=https://qxnav.com/rules/QuantumultX/img/jd.png, enabled=true
+20 0,20 * * * https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_necklace.js, tag=点点券, img-url=https://qxnav.com/rules/QuantumultX/img/jd.png, enabled=true
+2 0 * * * https://qxnav.com/rules/QuantumultX/js/lxk0301/jd_cash.js, tag=签到领现金, img-url=https://qxnav.com/rules/QuantumultX/img/jd.png, enabled=true
+5 */2 * * * https://raw.githubusercontent.com/passerby-b/JDDJ/main/jddj_fruit_collectWater.js, tag=到家果园收水滴, img-url=https://qxnav.com/rules/QuantumultX/img/jddj.png, enabled=true
+10 0,8,11,17 * * * https://raw.githubusercontent.com/passerby-b/JDDJ/main/jddj_fruit.js, tag=京东到家果园任务, img-url=https://qxnav.com/rules/QuantumultX/img/jddj.png, enabled=true
+5 0 * * * https://raw.githubusercontent.com/ZCY01/daily_scripts/main/jd/jd_priceProtect.js, tag=京东价格保护, img-url=https://qxnav.com/rules/QuantumultX/img/jd.png, enabled=true
+5 0,23 * * * https://qxnav.com/rules/QuantumultX/js/lxk0301/jd_club_lottery.js, tag=摇京豆, img-url=https://qxnav.com/rules/QuantumultX/img/jdyjd.png, enabled=true
+13 1,22,23 * * * https://qxnav.com/rules/QuantumultX/js/lxk0301/jd_daily_lottery.js, tag=每日抽奖, img-url=https://qxnav.com/rules/QuantumultX/img/jd.png, enabled=true
+10 7 * * * https://qxnav.com/rules/QuantumultX/js/jd_syj.js, tag=赚京豆, img-url=https://raw.githubusercontent.com/58xinian/icon/master/jd_syj.png, enabled=true
+0 2 * * * https://qxnav.com/rules/QuantumultX/js/lxk0301/jd_price.js, tag=京东保价, img-url=https://qxnav.com/rules/QuantumultX/img/jd.png, enabled=true
+10 * * * * https://qxnav.com/rules/QuantumultX/js/lxk0301/jd_jin_tie.js, tag=领金贴, img-url=https://qxnav.com/rules/QuantumultX/img/jd.png, enabled=true
+30 6 * * * https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_goodMorning.js, tag=早起福利, img-url=https://qxnav.com/rules/QuantumultX/img/jd.png, enabled=true
+11 1 * * * https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/scripts/jd/jd_lotteryMachine.js, tag=京东抽奖机, img-url=https://qxzy.top/rules/QuantumultX/img/jd.png, enabled=true
+15 2,14,22 * * * https://raw.githubusercontent.com/zwf234/rules/master/js/jd_sendBeans.js, tag=送豆得豆, img-url=https://qxzy.top/rules/QuantumultX/img/jd.png, enabled=true
+1 0 * * * https://raw.githubusercontent.com/chavyleung/scripts/master/10086/10086.js, tag=中国移动, img-url=https://raw.githubusercontent.com/Orz-3/task/master/10086.png, enabled=true
+0 9 * * * https://raw.githubusercontent.com/chavyleung/scripts/master/jd/JD_BaiTiao.js, tag=京东白条, img-url=https://raw.githubusercontent.com/Orz-3/task/master/jd.png, enabled=true
+1 0 * * * https://raw.githubusercontent.com/chavyleung/scripts/master/bilibili/bilibili.js, tag=bilibili, img-url=https://raw.githubusercontent.com/Orz-3/task/master/bilibili.png, enabled=true
+10 2 8 * * * https://raw.githubusercontent.com/chavyleung/scripts/master/neteasemusic/neteasemusic.js, tag=网易云音乐, img-url=https://raw.githubusercontent.com/KOP-XIAO/QuantumultX/master/img/dragonball/2.PNG, enabled=true
+# 京东多合一签到
+#浏览器登录 https://bean.m.jd.com 点击签到并且出现签到日历
+3 0 * * * https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js, tag=京东多合一签到, img-url=https://raw.githubusercontent.com/Orz-3/task/master/jd.png,enabled=true
+
+# AcFun签到
+#打开 APP, 访问下`我的`
+2 0 * * * https://raw.githubusercontent.com/chavyleung/scripts/master/acfun/acfun.js, tag=AcFun, img-url=https://raw.githubusercontent.com/Orz-3/task/master/acfun.png,enabled=true
+
+# 什么值得买
+#浏览器访问并登录: https://zhiyou.smzdm.com/user/login
+5 0 * * * https://raw.githubusercontent.com/chavyleung/scripts/master/smzdm/quanx/smzdm.js, tag=什么值得买, img-url=https://raw.githubusercontent.com/Orz-3/task/master/smzdm.png,enabled=true
+
+# 喜马拉雅
+#打开 APP, 访问下右下角`账号`
+6 0 * * * https://raw.githubusercontent.com/chavyleung/scripts/master/ximalaya/ximalaya.js, tag=喜马拉雅, img-url=https://raw.githubusercontent.com/Orz-3/task/master/ximalaya.png,enabled=true
+
+# 美团
+#打开 APP , 然后手动签到 1 次, (`首页` > `红包签到`)
+4 0 * * * https://raw.githubusercontent.com/chavyleung/scripts/master/meituan/meituan.js, tag=美团, img-url=https://raw.githubusercontent.com/Orz-3/task/master/meituan.png,enabled=true
+
+[rewrite_local]
+#AcFun获取cookie
+^https:\/\/api\-ipv6\.app\.acfun\.cn\/rest\/app\/user\/personalInfo url script-request-header https://raw.githubusercontent.com/chavyleung/scripts/master/acfun/acfun.cookie.js
+
+[mitm]
+hostname = *googlevideo.com, *.acfun.cn
+
+passphrase = DA82BFC1
+p12 = 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
+
+
+[http_backend]
+https://raw.githubusercontent.com/chavyleung/scripts/master/chavy.box.js, tag=boxjs, path=∧/, enabled=true
+
