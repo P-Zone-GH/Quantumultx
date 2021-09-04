@@ -8,7 +8,7 @@ const tokenVal = chavy.getdata(tokenKey)
 sign()
 
 function sign() {
-  let url = { url: `https://api-new.acfunchina.com/rest/app/user/signIn`, headers: { Cookie: cookieVal } }
+  let url = { url: `https://api-ipv6.acfunchina.com/rest/app/user/signIn`, headers: { Cookie: cookieVal } }
   url.headers['access_token'] = `${tokenVal}`
   url.headers['acPlatform'] = 'IPHONE'
   url.headers['User-Agent'] = 'AcFun/6.14.2 (iPhone; iOS 13.3; Scale/2.00)'
@@ -30,7 +30,7 @@ function sign() {
 }
 
 function getinfo(signresult) {
-  let url = { url: `https://api-new.acfunchina.com/rest/app/user/hasSignedIn`, headers: { Cookie: cookieVal } }
+  let url = { url: `https://api-ipv6.acfunchina.com/rest/app/user/hasSignedIn`, headers: { Cookie: cookieVal } }
   url.headers['access_token'] = `${tokenVal}`
   url.headers['acPlatform'] = 'IPHONE'
   url.headers['User-Agent'] = 'AcFun/6.14.2 (iPhone; iOS 13.3; Scale/2.00)'
