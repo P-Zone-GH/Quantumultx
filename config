@@ -90,7 +90,7 @@ static=🚀 节点选择, DIRECT, [SS] ShadowSocks, [Trojan] trojan-tcp, [VMess]
 static=🌍 国外媒体, 🚀 节点选择, 🎯 全球直连,  img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/GlobalMedia.png
 static=📲 电报信息, 🚀 节点选择, 🎯 全球直连, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Telegram.png
 static=Ⓜ️ 微软服务, 🎯 全球直连, 🚀 节点选择, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Microsoft.png
-static=🍎 苹果服务, 🚀 节点选择, 🎯 全球直连, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Apple.png
+static=🍎 苹果服务, 🎯 全球直连，🚀 节点选择, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Apple.png
 static=📢 谷歌FCM, 🚀 节点选择, 🎯 全球直连
 static=🎯 全球直连, DIRECT, 🚀 节点选择, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Direct.png
 static=🛑 全球拦截, REJECT, DIRECT, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Advertising.png
