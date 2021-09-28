@@ -276,7 +276,7 @@ FINAL,🐟 漏网之鱼
 
 # AcFun签到
 #打开 APP, 访问下`我的`
-2 0 * * * https://raw.githubusercontent.com/P-Zone-GH/Quantumultx/main/js/AcFun/Acfun.js, tag=AcFun, img-url=https://raw.githubusercontent.com/Orz-3/task/master/acfun.png,enabled=true
+#2 0 * * * https://raw.githubusercontent.com/P-Zone-GH/Quantumultx/main/js/AcFun/Acfun.js, tag=AcFun, img-url=https://raw.githubusercontent.com/Orz-3/task/master/acfun.png,enabled=true
 
 # 什么值得买
 #浏览器访问并登录: https://zhiyou.smzdm.com/user/login
