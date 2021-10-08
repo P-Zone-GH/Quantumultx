@@ -211,11 +211,11 @@ https://raw.githubusercontent.com/Orz-3/QuantumultX/master/JS_GetCookie.conf, ta
 ;trojan=192.168.1.1:443, password=pwd, over-tls=true, tls-host=example.com, tls-verification=true, fast-open=false, udp-relay=false, tag=trojan-tls-02
 
 
-shadowsocks=xray.p-zone.link:18620, method=chacha20-ietf-poly1305, password=a18c9c1a-30b4-49cc-967a-5b954982e83f, fast-open=ture, udp-relay=ture, tag=[SS] ShadowSocks
+shadowsocks=xray.p-zone.cyou:12123, method=chacha20-ietf-poly1305, password=6007067f-8a80-43de-8e1c-e07b76aaca07, fast-open=ture, udp-relay=ture, tag=[SS] ShadowSocks
 
-trojan = xray.p-zone.link:17859, password=5f0491ab-ab23-4732-bd90-9beb0208f8b0, over-tls=true, tls-host=xray.p-zone.link, fast-open=true, udp-relay=true, tls-verification=true, tag=[Trojan] trojan-tcp
+trojan = xray.p-zone.cyou:12122, password=6007067f-8a80-43de-8e1c-e07b76aaca07, over-tls=true, tls-host=xray.p-zone.cyou, fast-open=true, udp-relay=true, tls-verification=true, tag=[Trojan] trojan-tcp
 
-vmess = xray.p-zone.link:17859, method=chacha20-ietf-poly1305, password=5f0491ab-ab23-4732-bd90-9beb0208f8b0, obfs=wss, obfs-host=xray.p-zone.link, obfs-uri=/vmessws, fast-open=true, udp-relay=true, tag=[VMess] vmess-ws-tls
+vmess = xray.p-zone.cyou:12122, method=chacha20-ietf-poly1305, password=6007067f-8a80-43de-8e1c-e07b76aaca07, obfs=wss, obfs-host=xray.p-zone.cyou, obfs-uri=/97RSICH6, fast-open=true, udp-relay=true, tag=[VMess] vmess-ws-tls
 
 
 #本地分流规则(对于完全相同的某条规则，本地的将优先生效)
