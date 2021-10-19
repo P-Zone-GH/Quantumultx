@@ -86,16 +86,16 @@ server=/*.xiaomi.com/119.29.29.29
 ;direct/proxy/reject 则只能用本地图标，名字分别为 direct.png, proxy.png,reject.png 放置于 Images 文件夹下即可生效 (108*108 大小)
 
 [policy]
-static=🚀 节点选择, DIRECT, [SS] ShadowSocks, [Trojan] trojan-tcp, [VMess] vmess-ws-tls
-static=🌍 国外媒体, 🚀 节点选择, 🎯 全球直连,  img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/GlobalMedia.png
-static=📲 电报信息, 🚀 节点选择, 🎯 全球直连, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Telegram.png
-static=Ⓜ️ 微软服务, 🎯 全球直连, 🚀 节点选择, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Microsoft.png
-static=🍎 苹果服务, 🚀 节点选择, 🎯 全球直连, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Apple.png
-static=📢 谷歌FCM, 🚀 节点选择, 🎯 全球直连
-static=🎯 全球直连, DIRECT, 🚀 节点选择, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Direct.png
+static=🚀 节点选择, ♻️ 自动选择, 🎯 全球直连, [SS] ShadowSocks, [Trojan] trojan-tcp, [VMess] vmess-ws-tls
+available=♻️ 自动选择, [SS] ShadowSocks, [Trojan] trojan-tcp, [VMess] vmess-ws-tls, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Auto.png
+static=🌍 国外媒体, 🚀 节点选择, ♻️ 自动选择, 🎯 全球直连, [SS] ShadowSocks, [Trojan] trojan-tcp, [VMess] vmess-ws-tls, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/GlobalMedia.png
+static=📲 电报信息, 🚀 节点选择, 🎯 全球直连, [SS] ShadowSocks, [Trojan] trojan-tcp, [VMess] vmess-ws-tls, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Telegram.png
+static=Ⓜ️ 微软服务, 🎯 全球直连, 🚀 节点选择, [SS] ShadowSocks, [Trojan] trojan-tcp, [VMess] vmess-ws-tls, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Microsoft.png
+static=🍎 苹果服务, 🚀 节点选择, 🎯 全球直连, [SS] ShadowSocks, [Trojan] trojan-tcp, [VMess] vmess-ws-tls, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Apple.png
+static=🎯 全球直连, DIRECT, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Direct.png
 static=🛑 全球拦截, REJECT, DIRECT, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Advertising.png
-static=🍃 应用净化, REJECT, DIRECT
-static=🐟 漏网之鱼, 🚀 节点选择, 🎯 全球直连, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Final.png
+static=⛔ 应用拦截, REJECT, DIRECT
+static=🐟 漏网之鱼, 🚀 节点选择, 🎯 全球直连, ♻️ 自动选择, [SS] ShadowSocks, [Trojan] trojan-tcp, [VMess] vmess-ws-tls, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Final.png
 
 #server-tag-regex 以及 resource-tag-regex 参数用于正则筛选来建立策略组
 #具体可参见教程部分: https://shrtm.nu/DAFP
@@ -120,19 +120,16 @@ static=🐟 漏网之鱼, 🚀 节点选择, 🎯 全球直连, img-url=https://
 # update-interval 为更新时间参数，单位 秒, 默认更新时间为 24*60*60=86400 秒，也就是24小时.
 # opt-parser=true/false 用于控制是否对本订阅 开启资源解析器，不写或者 false 表示不启用解析器;
 
-https://pub-api-1.bianyuan.xyz/getruleset?type=2&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvTG9jYWxBcmVhTmV0d29yay5saXN0&group=8J-OryDlhajnkIPnm7Tov54, tag=🎯 全球直连, enabled=true
-https://pub-api-1.bianyuan.xyz/getruleset?type=2&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvVW5CYW4ubGlzdA&group=8J-OryDlhajnkIPnm7Tov54, tag=🎯 全球直连, enabled=true
-https://pub-api-1.bianyuan.xyz/getruleset?type=2&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvQmFuQUQubGlzdA&group=8J-bkSDlhajnkIPmi6bmiKo, tag=🛑 全球拦截, enabled=true
-https://pub-api-1.bianyuan.xyz/getruleset?type=2&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvQmFuUHJvZ3JhbUFELmxpc3Q&group=8J-NgyDlupTnlKjlh4DljJY, tag=🍃 应用净化, enabled=true
-https://pub-api-1.bianyuan.xyz/getruleset?type=2&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvUnVsZXNldC9Hb29nbGVGQ00ubGlzdA&group=8J-ToiDosLfmrYxGQ00, tag=📢 谷歌FCM, enabled=true
-https://pub-api-1.bianyuan.xyz/getruleset?type=2&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvR29vZ2xlQ04ubGlzdA&group=8J-OryDlhajnkIPnm7Tov54, tag=🎯 全球直连, enabled=true
-https://pub-api-1.bianyuan.xyz/getruleset?type=2&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvTWljcm9zb2Z0Lmxpc3Q&group=4pOC77iPIOW-rui9r-acjeWKoQ, tag=Ⓜ️ 微软服务, enabled=true
-https://pub-api-1.bianyuan.xyz/getruleset?type=2&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvQXBwbGUubGlzdA&group=8J-NjiDoi7nmnpzmnI3liqE, tag=🍎 苹果服务, enabled=true
-https://pub-api-1.bianyuan.xyz/getruleset?type=2&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvVGVsZWdyYW0ubGlzdA&group=8J-TsiDnlLXmiqXkv6Hmga8, tag=📲 电报信息, enabled=true
-https://pub-api-1.bianyuan.xyz/getruleset?type=2&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvUHJveHlNZWRpYS5saXN0&group=8J-MjSDlm73lpJblqpLkvZM, tag=🌍 国外媒体, enabled=true
-https://pub-api-1.bianyuan.xyz/getruleset?type=2&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvUHJveHlMaXRlLmxpc3Q&group=8J-agCDoioLngrnpgInmi6k, tag=🚀 节点选择, enabled=true
-https://pub-api-1.bianyuan.xyz/getruleset?type=2&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvQ2hpbmFEb21haW4ubGlzdA&group=8J-OryDlhajnkIPnm7Tov54, tag=🎯 全球直连, enabled=true
-https://pub-api-1.bianyuan.xyz/getruleset?type=2&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvQ2hpbmFDb21wYW55SXAubGlzdA&group=8J-OryDlhajnkIPnm7Tov54, tag=🎯 全球直连, enabled=true
+https://subcon.dlj.tf/getruleset?type=2&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvTG9jYWxBcmVhTmV0d29yay5saXN0&group=8J-OryDlhajnkIPnm7Tov54, tag=🎯 全球直连, enabled=true
+https://subcon.dlj.tf/getruleset?type=2&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvQmFuQUQubGlzdA&group=8J-bkSDlhajnkIPmi6bmiKo, tag=🛑 全球拦截, enabled=true
+https://subcon.dlj.tf/getruleset?type=2&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvQmFuUHJvZ3JhbUFELmxpc3Q&group=4puUIOW6lOeUqOaLpuaIqg, tag=⛔ 应用拦截, enabled=true
+https://subcon.dlj.tf/getruleset?type=2&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvQ2hpbmFEb21haW4ubGlzdA&group=8J-OryDlhajnkIPnm7Tov54, tag=🎯 全球直连, enabled=true
+https://subcon.dlj.tf/getruleset?type=2&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvTWljcm9zb2Z0Lmxpc3Q&group=4pOC77iPIOW-rui9r-acjeWKoQ, tag=Ⓜ️ 微软服务, enabled=true
+https://subcon.dlj.tf/getruleset?type=2&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvQXBwbGUubGlzdA&group=8J-NjiDoi7nmnpzmnI3liqE, tag=🍎 苹果服务, enabled=true
+https://subcon.dlj.tf/getruleset?type=2&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0Nvbm5lcnNIdWEvUHJvZmlsZXMvbWFzdGVyL1N1cmdlL1J1bGVzZXQvR2xvYmFsTWVkaWEubGlzdA&group=8J-MjSDlm73lpJblqpLkvZM, tag=🌍 国外媒体, enabled=true
+https://subcon.dlj.tf/getruleset?type=2&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0Nvbm5lcnNIdWEvUHJvZmlsZXMvbWFzdGVyL1N1cmdlL1J1bGVzZXQvVGVsZWdyYW0ubGlzdA&group=8J-TsiDnlLXmiqXkv6Hmga8, tag=📲 电报信息, enabled=true
+https://subcon.dlj.tf/getruleset?type=2&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvUHJveHlMaXRlLmxpc3Q&group=8J-agCDoioLngrnpgInmi6k, tag=🚀 节点选择, enabled=true
+https://subcon.dlj.tf/getruleset?type=2&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvQ2hpbmFDb21wYW55SXAubGlzdA&group=8J-OryDlhajnkIPnm7Tov54, tag=🎯 全球直连, enabled=true
 
 
 #支持本地/iCloud规则文件，位于Quantumult X/Profiles路径下
@@ -210,11 +207,8 @@ https://raw.githubusercontent.com/Orz-3/QuantumultX/master/JS_GetCookie.conf, ta
 ;trojan=example.com:443, password=pwd, over-tls=true, tls-verification=true, fast-open=false, udp-relay=false, tag=trojan-tls-01
 ;trojan=192.168.1.1:443, password=pwd, over-tls=true, tls-host=example.com, tls-verification=true, fast-open=false, udp-relay=false, tag=trojan-tls-02
 
-
-shadowsocks=xray.p-zone.cyou:12123, method=chacha20-ietf-poly1305, password=6007067f-8a80-43de-8e1c-e07b76aaca07, fast-open=ture, udp-relay=ture, tag=[SS] ShadowSocks
-
-trojan = xray.p-zone.cyou:12122, password=6007067f-8a80-43de-8e1c-e07b76aaca07, over-tls=true, tls-host=xray.p-zone.cyou, fast-open=true, udp-relay=true, tls-verification=true, tag=[Trojan] trojan-tcp
-
+shadowsocks = xray.p-zone.cyou:12123, method=chacha20-ietf-poly1305, password=6007067f-8a80-43de-8e1c-e07b76aaca07, fast-open=true, udp-relay=true, tag=[SS] ShadowSocks
+trojan = xray.p-zone.cyou:12122, password=6007067f-8a80-43de-8e1c-e07b76aaca07, over-tls=true, tls-host=xray.p-zone.cyou, fast-open=true, udp-relay=true, tls-verification=false, tag=[Trojan] trojan-tcp
 vmess = xray.p-zone.cyou:12122, method=chacha20-ietf-poly1305, password=6007067f-8a80-43de-8e1c-e07b76aaca07, obfs=wss, obfs-host=xray.p-zone.cyou, obfs-uri=/97RSICH6, fast-open=true, udp-relay=true, tag=[VMess] vmess-ws-tls
 
 
@@ -230,6 +224,7 @@ ip-cidr, 172.16.0.0/12, direct
 ip-cidr, 192.168.0.0/16, direct
 ip-cidr, 224.0.0.0/24, direct
 #手动添加的策略显示在这里
+host, subcon.dlj.tf, 🚀 节点选择
 host, qxzy.top, 🚀 节点选择
 host, githubusercontent.com, 🚀 节点选择
 #不在上述规则中(远程以及本地)的剩余请求，将走final 指定的节点/策略
