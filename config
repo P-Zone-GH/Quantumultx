@@ -252,7 +252,6 @@ FINAL,🐟 漏网之鱼
 2 9 * * * https://qxnav.com/rules/QuantumultX/js/jd_bean_change.js, tag=京豆变动通知, img-url=https://qxnav.com/rules/QuantumultX/img/jd.png, enabled=true
 55 23 * * * https://qxnav.com/rules/QuantumultX/js/zwf234/jd_unsubscribe.js, tag=取关京东店铺商品, img-url=https://qxnav.com/rules/QuantumultX/img/jd.png, enabled=true
 1 0-23/1 * 6 * https://qxnav.com/rules/QuantumultX/js/zwf234/jd_SplitRedPacket.js, tag=京东天降红包, img-url=https://qxnav.com/rules/QuantumultX/img/jd.png, enabled=true
-20 0,20 * * * https://raw.githubusercontent.com/shufflewzc/faker2/main/jd_necklace.js, tag=点点券, img-url=https://qxnav.com/rules/QuantumultX/img/jd.png, enabled=true
 2 0 * * * https://qxnav.com/rules/QuantumultX/js/lxk0301/jd_cash.js, tag=签到领现金, img-url=https://qxnav.com/rules/QuantumultX/img/jd.png, enabled=true
 5 */2 * * * https://raw.githubusercontent.com/passerby-b/JDDJ/main/jddj_fruit_collectWater.js, tag=到家果园收水滴, img-url=https://qxnav.com/rules/QuantumultX/img/jddj.png, enabled=true
 10 0,8,11,17 * * * https://raw.githubusercontent.com/passerby-b/JDDJ/main/jddj_fruit.js, tag=京东到家果园任务, img-url=https://qxnav.com/rules/QuantumultX/img/jddj.png, enabled=true
