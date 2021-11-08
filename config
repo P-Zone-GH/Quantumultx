@@ -92,7 +92,7 @@ static=🌍 国外媒体, 🚀 节点选择, ♻️ 自动选择, 🎯 全球直
 static=📲 电报信息, 🚀 节点选择, 🎯 全球直连, [Trojan] trojan-tcp, [VMess] vmess-ws-tls, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Telegram.png
 static=Ⓜ️ 微软服务, 🎯 全球直连, 🚀 节点选择, [Trojan] trojan-tcp, [VMess] vmess-ws-tls, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Microsoft.png
 static=🍎 苹果服务, 🚀 节点选择, 🎯 全球直连, [Trojan] trojan-tcp, [VMess] vmess-ws-tls, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Apple.png
-static=📢 谷歌FCM, 🚀 节点选择, 🎯 全球直连, ♻️ 自动选择, [] trojan-tcp, [VMess] vmess-ws-tls
+static=📢 谷歌FCM, 🚀 节点选择, 🎯 全球直连, ♻️ 自动选择, [Trojan] trojan-tcp, [VMess] vmess-ws-tls
 static=🎯 全球直连, DIRECT, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Direct.png
 static=🛑 全球拦截, REJECT, DIRECT, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Advertising.png
 static=🍃 应用净化, REJECT, DIRECT
