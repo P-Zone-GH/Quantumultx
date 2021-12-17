@@ -194,7 +194,7 @@ https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Rewrit
 
 
 #京东淘宝比价
-https://raw.githubusercontent.com/Orz-3/QuantumultX/master/JD_TB_price.conf, tag=比价脚本, update-interval=86400, opt-parser=false, enabled=false
+https://service.2ti.st/QuanX/Rewrite/jd_tb_price.conf, tag=比价脚本, update-interval=86400, opt-parser=false, enabled=true
 
 #Orz-3批量获取cookies
 https://raw.githubusercontent.com/Orz-3/QuantumultX/master/JS_GetCookie.conf, tag=Qrz-3获取cookies, update-interval=86400, opt-parser=true, enabled=false
