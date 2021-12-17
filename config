@@ -94,7 +94,7 @@ server=/dl.l.google.com/119.29.29.29
 ;direct/proxy/reject 则只能用本地图标，名字分别为 direct.png, proxy.png,reject.png 放置于 Images 文件夹下即可生效 (108*108 大小)
 
 [policy]
-static=proxy, [Trojan] trojan-tcp, [VMess] vmess-ws-tls
+static=🚀 节点选择, 🎯 direct, [Trojan] trojan-tcp, [VMess] vmess-ws-tls
 
 ;static=Final, [Trojan] trojan-tcp, [VMess] vmess-ws-tls, direct, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Apple_Fitness.png
 
