@@ -96,7 +96,7 @@ server=/dl.l.google.com/119.29.29.29
 [policy]
 static=🚀 节点选择, 🎯 direct, [Trojan] trojan-tcp, [VMess] vmess-ws-tls
 
-;static=Final, [Trojan] trojan-tcp, [VMess] vmess-ws-tls, direct, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Apple_Fitness.png
+static=Final, [Trojan] trojan-tcp, [VMess] vmess-ws-tls, direct, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Apple_Fitness.png
 
 static=Telegram, [Trojan] trojan-tcp, [VMess] vmess-ws-tls, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Available_1.png
 
