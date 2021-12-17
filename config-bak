@@ -15,7 +15,7 @@ resource_parser_url= https://cdn.jsdelivr.net/gh/KOP-XIAO/QuantumultX@master/Scr
 ;👍👍geo_location_checker用于节点页面的节点信息展示，可完整自定义展示内容与方式
 ; extreme-ip-lookup为Quantumult X 作者提供的示范 api
 ;geo_location_checker=http://extreme-ip-lookup.com/json/, https://raw.githubusercontent.com/crossutility/Quantumult-X/master/sample-location-with-script.js
-;api 及获取、展示节点信息的 js
+;下面是我所使用的 api 及获取、展示节点信息的 js
 geo_location_checker=http://ip-api.com/json/?lang=zh-CN, https://raw.githubusercontent.com/KOP-XIAO/QuantumultX/master/Scripts/IP_API.js
 
 
@@ -31,7 +31,7 @@ geo_location_checker=http://ip-api.com/json/?lang=zh-CN, https://raw.githubuserc
 ;ssid_suspended_list=Asus, Shawn-Wifi
 
 ;dns exclusion list中的域名将不使用fake-ip方式. 其它域名则全部采用 fake-ip 及远程解析的模式
-dns_exclusion_list=*.cmpassport.com, *.jegotrip.com.cn, *.icitymobile.mobi, id6.me, *.pingan.com.cn, *.cmbchina.com
+;dns_exclusion_list=*.qq.com, qq.com
 
 ;UDP名单，留空则默认所有为端口。不在udp白名单列表中的端口，将被丢弃处理。
 ;udp_whitelist=53, 123, 1900, 80-443
@@ -76,14 +76,6 @@ server=/*.xiaomi.com/119.29.29.29
 ;address=/example5.com/192.168.16.18
 ;address=/example6.com/[2001:8d3:8d3:8d3:8d3:8d3:8d3:8d3]
 
-# 本地 DNS 映射
-# Firebase Cloud Messaging
-address=/mtalk.google.com/108.177.125.188
-
-# Google Dl
-server=/dl.google.com/119.29.29.29
-server=/dl.l.google.com/119.29.29.29
-
 
 #以下为策略组[policy]部分
 # static 策略组中，你需要手动选择想要的节点/策略组。
@@ -94,15 +86,17 @@ server=/dl.l.google.com/119.29.29.29
 ;direct/proxy/reject 则只能用本地图标，名字分别为 direct.png, proxy.png,reject.png 放置于 Images 文件夹下即可生效 (108*108 大小)
 
 [policy]
-static=🚀 节点选择, 🎯 direct, [Trojan] trojan-tcp, [VMess] vmess-ws-tls
-
-static=Final, [Trojan] trojan-tcp, [VMess] vmess-ws-tls, direct, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Apple_Fitness.png
-
-static=Telegram, [Trojan] trojan-tcp, [VMess] vmess-ws-tls, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Available_1.png
-
-static=Streaming, [Trojan] trojan-tcp, [VMess] vmess-ws-tls, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Streaming.png
-
-static=Guard, reject, direct, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/JOOX.png
+static=🚀 节点选择, ♻️ 自动选择, 🎯 全球直连, [Trojan] trojan-tcp, [VMess] vmess-ws-tls
+available=♻️ 自动选择, [Trojan] trojan-tcp, [VMess] vmess-ws-tls, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Auto.png
+static=🌍 国外媒体, 🚀 节点选择, ♻️ 自动选择, 🎯 全球直连, [Trojan] trojan-tcp, [VMess] vmess-ws-tls, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/GlobalMedia.png
+static=📲 电报信息, 🚀 节点选择, 🎯 全球直连, [Trojan] trojan-tcp, [VMess] vmess-ws-tls, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Telegram.png
+static=Ⓜ️ 微软服务, 🎯 全球直连, 🚀 节点选择, [Trojan] trojan-tcp, [VMess] vmess-ws-tls, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Microsoft.png
+static=🍎 苹果服务, 🚀 节点选择, 🎯 全球直连, [Trojan] trojan-tcp, [VMess] vmess-ws-tls, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Apple.png
+static=📢 谷歌FCM, 🚀 节点选择, 🎯 全球直连, ♻️ 自动选择, [Trojan] trojan-tcp, [VMess] vmess-ws-tls
+static=🎯 全球直连, DIRECT, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Direct.png
+static=🛑 全球拦截, REJECT, DIRECT, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Advertising.png
+static=🍃 应用净化, REJECT, DIRECT
+static=🐟 漏网之鱼, 🚀 节点选择, 🎯 全球直连, ♻️ 自动选择, [Trojan] trojan-tcp, [VMess] vmess-ws-tls, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Final.png
 
 #server-tag-regex 以及 resource-tag-regex 参数用于正则筛选来建立策略组
 #具体可参见教程部分: https://shrtm.nu/DAFP
@@ -127,40 +121,20 @@ static=Guard, reject, direct, img-url=https://raw.githubusercontent.com/Koolson/
 # update-interval 为更新时间参数，单位 秒, 默认更新时间为 24*60*60=86400 秒，也就是24小时。
 # opt-parser=true/false 用于控制是否对本订阅 开启资源解析器，不写或者 false 表示不启用解析器;
 
-# 后续规则修正
-https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Unbreak.list, tag=后续规则修正, force-policy=direct, update-interval=86400, opt-parser=true, enabled=true
+https://pub-api-1.bianyuan.xyz/getruleset?type=2&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvTG9jYWxBcmVhTmV0d29yay5saXN0&group=8J-OryDlhajnkIPnm7Tov54, tag=🎯 全球直连, enabled=true
+https://pub-api-1.bianyuan.xyz/getruleset?type=2&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvVW5CYW4ubGlzdA&group=8J-OryDlhajnkIPnm7Tov54, tag=🎯 全球直连, enabled=true
+https://pub-api-1.bianyuan.xyz/getruleset?type=2&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvQmFuQUQubGlzdA&group=8J-bkSDlhajnkIPmi6bmiKo, tag=🛑 全球拦截, enabled=true
+https://pub-api-1.bianyuan.xyz/getruleset?type=2&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvQmFuUHJvZ3JhbUFELmxpc3Q&group=8J-NgyDlupTnlKjlh4DljJY, tag=🍃 应用净化, enabled=true
+https://pub-api-1.bianyuan.xyz/getruleset?type=2&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvUnVsZXNldC9Hb29nbGVGQ00ubGlzdA&group=8J-ToiDosLfmrYxGQ00, tag=📢 谷歌FCM, enabled=true
+https://pub-api-1.bianyuan.xyz/getruleset?type=2&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvR29vZ2xlQ04ubGlzdA&group=8J-OryDlhajnkIPnm7Tov54, tag=🎯 全球直连, enabled=true
+https://pub-api-1.bianyuan.xyz/getruleset?type=2&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvTWljcm9zb2Z0Lmxpc3Q&group=4pOC77iPIOW-rui9r-acjeWKoQ, tag=Ⓜ️ 微软服务, enabled=true
+https://pub-api-1.bianyuan.xyz/getruleset?type=2&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvQXBwbGUubGlzdA&group=8J-NjiDoi7nmnpzmnI3liqE, tag=🍎 苹果服务, enabled=true
+https://pub-api-1.bianyuan.xyz/getruleset?type=2&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvVGVsZWdyYW0ubGlzdA&group=8J-TsiDnlLXmiqXkv6Hmga8, tag=📲 电报信息, enabled=true
+https://pub-api-1.bianyuan.xyz/getruleset?type=2&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvUHJveHlNZWRpYS5saXN0&group=8J-MjSDlm73lpJblqpLkvZM, tag=🌍 国外媒体, enabled=true
+https://pub-api-1.bianyuan.xyz/getruleset?type=2&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvUHJveHlMaXRlLmxpc3Q&group=8J-agCDoioLngrnpgInmi6k, tag=🚀 节点选择, enabled=true
+https://pub-api-1.bianyuan.xyz/getruleset?type=2&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvQ2hpbmFEb21haW4ubGlzdA&group=8J-OryDlhajnkIPnm7Tov54, tag=🎯 全球直连, enabled=true
+https://pub-api-1.bianyuan.xyz/getruleset?type=2&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FDTDRTU1IvQUNMNFNTUi9tYXN0ZXIvQ2xhc2gvQ2hpbmFDb21wYW55SXAubGlzdA&group=8J-OryDlhajnkIPnm7Tov54, tag=🎯 全球直连, enabled=true
 
-# 广告拦截
-https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Guard/Advertising.list, tag=广告拦截, force-policy=Guard, update-interval=86400, opt-parser=true, enabled=true
-https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Guard/AdvertisingPlus.list#type=domain-set, tag=Advertising+, force-policy=Guard, update-interval=86400, opt-parser=true, enabled=true
-
-# NobyDa 广告拦截
-https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/AdRule.list, tag=NobyDa 广告拦截, force-policy=Guard, update-interval=86400, opt-parser=true, enabled=true
-
-# 隐私保护
-https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Guard/Privacy.list, tag=隐私保护, force-policy=Guard, update-interval=86400, opt-parser=true, enabled=true
-
-# 应用内追踪
-https://raw.githubusercontent.com/mieqq/mieqq/master/In-AppTracker.txt#type=domain-set, tag=应用内追踪, force-policy=Guard, update-interval=86400, opt-parser=true, enabled=true
-
-# 运营商劫持或恶意网站
-https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Guard/Hijacking.list, tag=运营商劫持或恶意网站, force-policy=Guard, update-interval=86400, opt-parser=true, enabled=true
-
-# 国际流媒体服务
-https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/StreamingMedia/Streaming.list, tag=国际流媒体服务, force-policy=Streaming, update-interval=86400, opt-parser=true, enabled=true
-
-# Telegram服务
-https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Extra/Telegram/Telegram.list, tag=Telegram, force-policy=Telegram, update-interval=86400, opt-parser=true, enabled=true
-
-# 全球加速
-https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Global.list, tag=全球加速, force-policy=proxy, update-interval=86400, opt-parser=true, enabled=true
-
-# 中国直连
-https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/China.list, tag=中国直连, force-policy=direct, update-interval=86400, opt-parser=true, enabled=true
-
-# China IP池
-https://cdn.jsdelivr.net/gh/17mon/china_ip_list@master/china_ip_list.txt#type=rule, tag=ChinaIPv4, force-policy=direct, update-interval=86400, opt-parser=true, enabled=true
-https://gaoyifan.github.io/china-operator-ip/chinanet6.txt#type=rule, tag=ChinaIPv6, force-policy=direct, update-interval=86400, opt-parser=true, enabled=true
 
 #支持本地/iCloud规则文件，位于Quantumult X/Profiles路径下
 ;filter.txt, tag=本地分流, enabled=false
@@ -171,27 +145,16 @@ https://gaoyifan.github.io/china-operator-ip/chinanet6.txt#type=rule, tag=ChinaI
 # update-interval 为更新时间参数，单位 秒, 默认更新时间为 24*60*60=86400 秒，也就是24小时.
 # opt-parser=true/false 用于控制是否对本订阅 开启资源解析器，不写或者 false 表示不启用解析器;
 
-# 神机复写
-https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Rewrite/General.conf, tag=神机复写, update-interval=86400, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Rewrite/Block/Advertising.conf, tag=神机复写(⛔️去广告), update-interval=86400, opt-parser=false, enabled=true
 
-# 神机去广告
-https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Rewrite/Block/Advertising.conf, tag=神机去广告, update-interval=86400, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Rewrite/General.conf, tag=神机复写(😄️通用), update-interval=86400, opt-parser=false, enabled=true
 
-# 解锁完整的Apple搜索功能和集成服务
-https://raw.githubusercontent.com/VirgilClyne/iRingo/main/qxrewrite/Siri_Suggestions.qxrewrite, tag=解锁Apple搜索功能, update-interval=86400, opt-parser=false, enabled=true
 
-# 修改AppleMaps为国际版(为了导航搜索体验，国内建议使用高德导航)
-; https://raw.githubusercontent.com/VirgilClyne/iRingo/main/qxrewrite/Apple_Maps.qxrewrite, tag=修改AppleMaps为国际版, update-interval=86400, opt-parser=false, enabled=true
+;Youtube premium 会员请勿开启此条
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Rewrite/Block/YouTubeAds.conf, tag=神机复写(🈲YouTube-AD) , update-interval=86400, opt-parser=false, enabled=true
 
-# 关闭谷歌安全搜索(Beta)
-https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Rewrite/Turn-Off-Google-Safesearch.conf, tag=关闭谷歌安全搜索(Beta), update-interval=86400, opt-parser=false, enabled=true
-
-# NobyDa去广告
-https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/Rewrite_lhie1.conf, tag=NobyDa去广告, update-interval=86400, opt-parser=true, enabled=true
-
-# YouTube去广告
-https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Rewrite/Block/YouTubeAds.conf, tag=YouTube去广告, update-interval=86400, opt-parser=false, enabled=true
-
+#支持本地/iCloud的复写规则文件，位于Quantumult X/Profiles路径下
+;rewrite.txt, tag=本地复写, opt-parser=false, enabled=false
 
 #京东淘宝比价
 https://service.2ti.st/QuanX/Rewrite/jd_tb_price.conf, tag=比价, update-interval=604800, opt-parser=false, enabled=true
@@ -236,7 +199,7 @@ host, dlj.tf, 🚀 节点选择
 host, qxzy.top, 🚀 节点选择
 host, githubusercontent.com, 🚀 节点选择
 #不在上述规则中(远程以及本地)的剩余请求，将走final 指定的节点/策略
-GEOIP,CN,🎯 direct
+GEOIP,CN,🎯 全球直连
 FINAL,🐟 漏网之鱼
 
 
