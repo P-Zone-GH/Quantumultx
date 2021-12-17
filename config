@@ -236,8 +236,8 @@ host, dlj.tf, 🚀 节点选择
 host, qxzy.top, 🚀 节点选择
 host, githubusercontent.com, 🚀 节点选择
 #不在上述规则中(远程以及本地)的剩余请求，将走final 指定的节点/策略
-GEOIP,CN,🎯 direct
-FINAL,🐟 漏网之鱼
+;GEOIP,CN,🎯 direct
+;FINAL,🐟 漏网之鱼
 
 
 #本地复写规则
