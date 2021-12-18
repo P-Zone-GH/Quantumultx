@@ -231,6 +231,7 @@ ip-cidr, 172.16.0.0/12, direct
 ip-cidr, 192.168.0.0/16, direct
 ip-cidr, 224.0.0.0/24, direct
 #手动添加的策略显示在这里
+host, service.2ti.st direct
 host, bianyuan.xyz, 🚀 节点选择
 host, dlj.tf, 🚀 节点选择
 host, qxzy.top, 🚀 节点选择
