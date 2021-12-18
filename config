@@ -237,7 +237,7 @@ host, qxzy.top, 🚀 节点选择
 host, githubusercontent.com, 🚀 节点选择
 #不在上述规则中(远程以及本地)的剩余请求，将走final 指定的节点/策略
 -geoip, cn, direct
-final, 全球加速
+final, 🚀 节点选择
 
 
 #本地复写规则
