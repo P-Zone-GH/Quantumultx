@@ -254,16 +254,7 @@ final, 🚀 节点选择
 ;tag参数为 task 命名标识;
 ;img-url参数用于指定 task 的图标(108*108)
 2 9 * * * https://qxnav.com/rules/QuantumultX/js/jd_bean_change.js, tag=京豆变动通知, img-url=https://qxnav.com/rules/QuantumultX/img/jd.png, enabled=true
-<<<<<<< HEAD
-55 23 * * * https://qxnav.com/rules/QuantumultX/js/zwf234/jd_unsubscribe.js, tag=取关京东店铺商品, img-url=https://qxnav.com/rules/QuantumultX/img/jd.png, enabled=true
-2 0 * * * https://qxnav.com/rules/QuantumultX/js/lxk0301/jd_cash.js, tag=签到领现金, img-url=https://qxnav.com/rules/QuantumultX/img/jd.png, enabled=true
 5 0,23 * * * https://qxnav.com/rules/QuantumultX/js/lxk0301/jd_club_lottery.js, tag=摇京豆, img-url=https://qxnav.com/rules/QuantumultX/img/jdyjd.png, enabled=true
-10 7 * * * https://qxnav.com/rules/QuantumultX/js/jd_syj.js, tag=赚京豆, img-url=https://raw.githubusercontent.com/58xinian/icon/master/jd_syj.png, enabled=true
-10 * * * * https://qxnav.com/rules/QuantumultX/js/lxk0301/jd_jin_tie.js, tag=领金贴, img-url=https://qxnav.com/rules/QuantumultX/img/jd.png, enabled=true
-=======
-5 0,23 * * * https://qxnav.com/rules/QuantumultX/js/lxk0301/jd_club_lottery.js, tag=摇京豆, img-url=https://qxnav.com/rules/QuantumultX/img/jdyjd.png, enabled=true
-13 1,22,23 * * * https://qxnav.com/rules/QuantumultX/js/lxk0301/jd_daily_lottery.js, tag=每日抽奖, img-url=https://qxnav.com/rules/QuantumultX/img/jd.png, enabled=true
->>>>>>> 89167b1e10f6df885371e5d8a74081822e35202d
 11 1 * * * https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/scripts/jd/jd_lotteryMachine.js, tag=京东抽奖机, img-url=https://qxzy.top/rules/QuantumultX/img/jd.png, enabled=true
 1 0 * * * https://raw.githubusercontent.com/chavyleung/scripts/master/10086/10086.js, tag=中国移动, img-url=https://raw.githubusercontent.com/Orz-3/task/master/10086.png, enabled=true
 1 0 * * * https://raw.githubusercontent.com/chavyleung/scripts/master/bilibili/bilibili.js, tag=bilibili, img-url=https://raw.githubusercontent.com/Orz-3/task/master/bilibili.png, enabled=true
