@@ -1,17 +1,19 @@
 # DivineEngine Quantumult 配置示例
-#
+
 # 以 ";" 或 "#" 或 "//" 开头的行为注释行。
-#
+
 # 最新完整的示例需查看 Quantumult X 里「配置文件」中的「示例」
 
-# Update-2021.12.13.16.02
+# 完整配置教程：https://www.notion.so/Quantumult-X-1d32ddc6e61c4892ad2ec5ea47f00917
+
+# Update-2022.2.16.17.25
 
 [general]
 # Quantumult X 会对指定的网址进行相应测试，以确认节点的可用性
 server_check_url=http://cp.cloudflare.com/generate_204
 
 # 资源解析器
-resource_parser_url=https://cdn.jsdelivr.net/gh/KOP-XIAO/QuantumultX@master/Scripts/resource-parser.js
+resource_parser_url=https://raw.githubusercontent.com/KOP-XIAO/QuantumultX/master/Scripts/resource-parser.js
 
 # api获取以及节点信息查询
 geo_location_checker=http://ip-api.com/json/?lang=zh-CN, https://raw.githubusercontent.com/KOP-XIAO/QuantumultX/master/Scripts/IP_API.js
@@ -26,10 +28,15 @@ excluded_routes=239.255.255.250/32, 24.105.30.129/32, 185.60.112.157/32, 185.60.
 fallback_udp_policy=direct
 
 [dns]
+# 禁用系统 DNS
+# 为了提高性能，会使用从当前网络(系统)中获取的 DNS 服务器(您可以使用「no-system」禁用此功能，但至少要增加一个自定义的 DNS 服务器。
+;no-system
+
 # 禁用 IPv6
 no-ipv6
 
 # 自定义 DNS
+# DNSPod Public DNS
 server=119.29.29.29
 
 # DNS over HTTPS
@@ -37,18 +44,60 @@ server=119.29.29.29
 ;doh-server=https://223.6.6.6/dns-query
 
 # 本地 DNS 映射
+# Apple
+server=/aaplimg.com/119.29.29.29
+server=/apple.com/119.29.29.29
+server=/apple.com.cn/119.29.29.29
+server=/apple-cloudkit.com/119.29.29.29
+server=/apple-mapkit.com/119.29.29.29
+server=/cdn-apple.com/119.29.29.29
+server=/icloud.com/119.29.29.29
+server=/icloud.com.cn/119.29.29.29
+server=/mzstatic.com/119.29.29.29
+server=/*.aaplimg.com/119.29.29.29
+server=/*.apple.com/119.29.29.29
+server=/*.apple-cloudkit.com/119.29.29.29
+server=/*.apple-mapkit.com/119.29.29.29
+server=/*.cdn-apple.com/119.29.29.29
+server=/*.icloud.com/119.29.29.29
+server=/*.icloud.com.cn/119.29.29.29
+server=/*.mzstatic.com/119.29.29.29
+server=/*apple.com.akadns.net/119.29.29.29
+server=/*.apple.com.edgekey.net/119.29.29.29
+server=/*.apple.com.edgekey.net.globalredir.akadns.net/119.29.29.29
+server=/*icloud.com.akadns.net/119.29.29.29
+
 # Firebase Cloud Messaging
 address=/mtalk.google.com/108.177.125.188
 
 # Google Dl
 server=/dl.google.com/119.29.29.29
 server=/dl.l.google.com/119.29.29.29
+server=/update.googleapis.com/119.29.29.29
 
-# TP-Link
+# PlayStation
+server=/*.dl.playstation.net/119.29.29.29
+
+# Router Admin Panel
+server=/amplifi.lan/system
+server=/router.synology.com/system
+server=/sila.razer.com/system
+server=/router.asus.com/system
+server=/routerlogin.net/system
+server=/orbilogin.com/system
+server=/www.LinksysSmartWiFi.com/system
+server=/LinksysSmartWiFi.com/system
+server=/myrouter.local/system
+server=/www.miwifi.com/system
+server=/miwifi.com/system
+server=/mediarouter.home/system
 server=/tplogin.cn/system
 server=/tplinklogin.net/system
 server=/melogin.cn/system
 server=/falogin.cn/system
+
+# Apple TestFlight
+server=/*testflight.apple.com/8.8.4.4
 
 [policy]
 static=Final, HK, TW, JP, SG, US, direct, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Apple_Fitness.png
@@ -57,17 +106,25 @@ static=Telegram, HK, SG, US, img-url=https://raw.githubusercontent.com/Koolson/Q
 
 static=Streaming, HK, TW, JP, SG, US, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Streaming.png
 
+static=Spotify, HK, TW, JP, SG, US, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Spotify.png
+
+static=Disney+, HK, TW, JP, SG, US, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Disney+.png
+
+static=Netflix, HK, TW, JP, SG, US, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Netflix_Letter.png
+
+static=YouTube, HK, TW, JP, SG, US, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/YouTube_Letter.png
+
 static=Guard, reject, direct, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/JOOX.png
 
-url-latency-benchmark=HK, server-tag-regex=香港, check-interval=600, tolerance=50, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Hong_Kong.png
+url-latency-benchmark=HK, server-tag-regex=(?=.*(港|HK|(?i)Hong))^((?!(台|日|韩|新|美)).)*$, check-interval=600, tolerance=50, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Hong_Kong.png
 
-url-latency-benchmark=TW, server-tag-regex=台湾, check-interval=600, tolerance=50, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Taiwan.png
+url-latency-benchmark=TW, server-tag-regex=(?=.*(台|TW|(?i)Taiwan))^((?!(港|日|韩|新|美)).)*$, check-interval=600, tolerance=50, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Taiwan.png
 
-url-latency-benchmark=JP, server-tag-regex=日本, check-interval=600, tolerance=50, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Japan.png
+url-latency-benchmark=JP, server-tag-regex=(?=.*(日|JP|(?i)Japan))^((?!(港|台|韩|新|美)).)*$, check-interval=600, tolerance=50, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Japan.png
 
-url-latency-benchmark=SG, server-tag-regex=新加坡, check-interval=600, tolerance=50, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Singapore.png
+url-latency-benchmark=SG, server-tag-regex=(?=.*(新|狮|獅|SG|(?i)Singapore))^((?!(港|台|日|韩|美)).)*$, check-interval=600, tolerance=50, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Singapore.png
 
-url-latency-benchmark=US, server-tag-regex=美国, check-interval=600, tolerance=50, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/United_States.png
+url-latency-benchmark=US, server-tag-regex=(?=.*(美|US|(?i)States|American))^((?!(港|台|日|韩|新)).)*$, check-interval=600, tolerance=50, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/United_States.png
 
 [server_remote]
 
@@ -80,9 +137,6 @@ https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Unb
 https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Guard/Advertising.list, tag=广告拦截, force-policy=Guard, update-interval=86400, opt-parser=true, enabled=true
 https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Guard/AdvertisingPlus.list#type=domain-set, tag=Advertising+, force-policy=Guard, update-interval=86400, opt-parser=true, enabled=true
 
-# NobyDa 广告拦截
-https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/AdRule.list, tag=NobyDa 广告拦截, force-policy=Guard, update-interval=86400, opt-parser=true, enabled=true
-
 # 隐私保护
 https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Guard/Privacy.list, tag=隐私保护, force-policy=Guard, update-interval=86400, opt-parser=true, enabled=true
 
@@ -91,6 +145,18 @@ https://raw.githubusercontent.com/mieqq/mieqq/master/In-AppTracker.txt#type=doma
 
 # 运营商劫持或恶意网站
 https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Guard/Hijacking.list, tag=运营商劫持或恶意网站, force-policy=Guard, update-interval=86400, opt-parser=true, enabled=true
+
+# Disney+
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/StreamingMedia/Video/DisneyPlus.list, tag=Disney+, force-policy=Disney+, update-interval=86400, opt-parser=true, enabled=true
+
+# Netflix
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/StreamingMedia/Video/Netflix.list, tag=Netflix, force-policy=Netflix, update-interval=86400, opt-parser=true, enabled=true
+
+# YouTube
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/StreamingMedia/Video/YouTube.list, tag=YouTube, force-policy=YouTube, update-interval=86400, opt-parser=true, enabled=true
+
+# Spotify
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/StreamingMedia/Music/Spotify.list, tag=Spotify, force-policy=Spotify, update-interval=86400, opt-parser=true, enabled=true
 
 # 国际流媒体服务
 https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/StreamingMedia/Streaming.list, tag=国际流媒体服务, force-policy=Streaming, update-interval=86400, opt-parser=true, enabled=true
@@ -101,37 +167,32 @@ https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Ext
 # 全球加速
 https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Global.list, tag=全球加速, force-policy=proxy, update-interval=86400, opt-parser=true, enabled=true
 
+# Apple 服务
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Extra/Apple/Apple.list, tag=Apple, force-policy=direct, update-interval=86400, opt-parser=true, enabled=true
+
 # 中国直连
 https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/China.list, tag=中国直连, force-policy=direct, update-interval=86400, opt-parser=true, enabled=true
 
-# China IP池
-https://cdn.jsdelivr.net/gh/17mon/china_ip_list@master/china_ip_list.txt#type=rule, tag=ChinaIPv4, force-policy=direct, update-interval=86400, opt-parser=true, enabled=true
-https://gaoyifan.github.io/china-operator-ip/chinanet6.txt#type=rule, tag=ChinaIPv6, force-policy=direct, update-interval=86400, opt-parser=true, enabled=true
-
-# GeoIP2 数据库（设置、GeoLite2来源自行添加）
-; https://cdn.jsdelivr.net/gh/Hackl0us/GeoIP2-CN@release/Country.mmdb
+# 建议在「其他设置」里「GeoLite2」的「来源」填写使用「 https://raw.githubusercontent.com/Loyalsoldier/geoip/release/Country.mmdb 」并开启「自动更新」
 
 [rewrite_remote]
 # 神机复写
-https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Rewrite/General.conf, tag=神机复写, update-interval=86400, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Rewrite/General.conf, tag=神机复写, update-interval=86400, enabled=true
 
 # 神机去广告
-https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Rewrite/Block/Advertising.conf, tag=神机去广告, update-interval=86400, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Rewrite/Block/Advertising.conf, tag=神机去广告, update-interval=86400, enabled=true
 
 # 解锁完整的Apple搜索功能和集成服务
-https://raw.githubusercontent.com/VirgilClyne/iRingo/main/qxrewrite/Siri_Suggestions.qxrewrite, tag=解锁Apple搜索功能, update-interval=86400, opt-parser=false, enabled=true
-
-# 修改AppleMaps为国际版(为了导航搜索体验，国内建议使用高德导航)
-; https://raw.githubusercontent.com/VirgilClyne/iRingo/main/qxrewrite/Apple_Maps.qxrewrite, tag=修改AppleMaps为国际版, update-interval=86400, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/VirgilClyne/iRingo/main/qxrewrite/Siri_Suggestions.qxrewrite, tag=解锁Apple搜索功能, update-interval=86400, enabled=true
 
 # 关闭谷歌安全搜索(Beta)
-https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Rewrite/Turn-Off-Google-Safesearch.conf, tag=关闭谷歌安全搜索(Beta), update-interval=86400, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Rewrite/Turn-Off-Google-Safesearch.conf, tag=关闭谷歌安全搜索(Beta), update-interval=86400, enabled=true
 
 # NobyDa去广告
-https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/Rewrite_lhie1.conf, tag=NobyDa去广告, update-interval=86400, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/Rewrite_lhie1.conf, tag=NobyDa去广告, update-interval=86400, enabled=true
 
 # YouTube去广告
-https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Rewrite/Block/YouTubeAds.conf, tag=YouTube去广告, update-interval=86400, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Rewrite/Block/YouTubeAds.conf, tag=YouTube去广告, update-interval=86400, enabled=true
 
 [server_local]
 
@@ -164,7 +225,7 @@ final, Final
 ^https?://(sdk|wb)app.uve.weibo.com(/interface/sdk/sdkad.php|/wbapplua/wbpullad.lua) url script-response-body https://raw.githubusercontent.com/yichahucha/surge/master/wb_launch.js
 ^https?://m?api\.weibo\.c(n|om)/2/(statuses/(unread|extend|positives/get|(friends|video)(/|_)(mix)?timeline)|stories/(video_stream|home_list)|(groups|fangle)/timeline|profile/statuses|comments/build_comments|photo/recommend_list|service/picfeed|searchall|cardlist|page|!/photos/pic_recommend_status|video/tiny_stream_video_list|photo/info) url script-response-body https://raw.githubusercontent.com/yichahucha/surge/master/wb_ad.js
 
-# 微信公众号去广告
+# 微信去除公众号文章底部广告
 ^https?:\/\/mp\.weixin\.qq\.com\/mp\/getappmsgad url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/Wechat.js
 
 # 解除微信链接限制
@@ -240,6 +301,12 @@ final, Final
 # 美标空气质量
 ^https?:\/\/weather-data\.apple\.com\/(v1|v2)\/weather.*(?!dataSets=forecastNextHour)(include=.*air_quality.*|dataSets=.*airQuality.*).*(country=[A-Z]{2})?.* url script-response-body https://raw.githubusercontent.com/VirgilClyne/iRingo/main/js/Apple_Weather.js
 
+# 拦截100解锁超级会员
+^https?:\/\/tagit\.hyhuo\.com\/cypt\/block100\/get_vip_info$ url script-response-body https://raw.githubusercontent.com/yqc007/QuantumultX/master/Block100SVIPCrack.js
+
+# 哔哩哔哩解锁大会员（目前支持解锁番剧和影视, 使用前须登陆自己的账号）
+^https?:\/\/ap(i|p)\.bilibili\.com\/bilibili\.\w{3,4}\..+\/(View|PlayView|PlayConf|PlayerOnline|MainList|ViewProgress)$ url script-request-header https://raw.githubusercontent.com/yqc007/QuantumultX/master/Script/BiLiBiLiBVIPCrack.js
+
 [task_local]
 # GeoIP查询
 event-interaction https://raw.githubusercontent.com/KOP-XIAO/QuantumultX/master/Scripts/geo_location.js, tag=GeoIP 查询, img-url=location.fill.viewfinder.system, enabled=true
@@ -253,8 +320,11 @@ event-interaction https://raw.githubusercontent.com/KOP-XIAO/QuantumultX/master/
 # YouTube切换
 event-interaction https://raw.githubusercontent.com/KOP-XIAO/QuantumultX/master/Scripts/switch-check-ytb.js, tag=YouTube 切换, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/YouTube_Letter.png, enabled=true
 
-# 流媒体解锁查询
-event-interaction https://raw.githubusercontent.com/KOP-XIAO/QuantumultX/master/Scripts/streaming-ui-check.js, tag=流媒体-解锁查询, img-url=checkmark.seal.system, enabled=true
+# 流媒体服务查询
+event-interaction https://raw.githubusercontent.com/KOP-XIAO/QuantumultX/master/Scripts/streaming-ui-check.js, tag=流媒体服务查询, img-url=checkmark.seal.system, enabled=true
+
+# 网易云音乐解锁节点查询
+event-interaction https://raw.githubusercontent.com/I-am-R-E/QuantumultX/main/TaskLocal/NeteaseMusicUnlockCheck.js, tag=网易音乐查询, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Netease_Music_Unlock.png, enabled=true
 
 # 疫情动态 （默认每天8～22点、每3小时播报一次）
 0 8-22/3 * * * https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tasks/nCov.js, tag=疫情动态, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/COVID-19.png, enabled=true
@@ -264,4 +334,4 @@ https://raw.githubusercontent.com/chavyleung/scripts/master/chavy.box.js, tag=Bo
 
 [mitm]
 skip_validating_cert = true
-hostname = api.weibo.cn, mapi.weibo.com, *.uve.weibo.com, -*.weibo.com, mp.weixin.qq.com, security.wechat.com, weixin110.qq.com, vip1.kuwo.cn, duckduckgo.com, testflight.apple.com, boxer.baidu.com, pan.baidu.com, weather-data.apple.com
+hostname = api.weibo.cn, mapi.weibo.com, *.uve.weibo.com, -*.weibo.com, mp.weixin.qq.com, security.wechat.com, weixin110.qq.com, vip1.kuwo.cn, duckduckgo.com, testflight.apple.com, boxer.baidu.com, pan.baidu.com, weather-data.apple.com, tagit.hyhuo.com, *.bili*.*, 124.239.240.*, 101.89.57.66, 218.94.210.66, 240e:b1:9801:206:11:0:0:*
