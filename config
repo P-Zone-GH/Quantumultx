@@ -109,6 +109,8 @@ server=/tplinklogin.net/system
 server=/melogin.cn/system
 server=/falogin.cn/system
 
+# Apple TestFlight
+server=/*testflight.apple.com/8.8.4.4
 
 #以下为策略组[policy]部分
 # static 策略组中，你需要手动选择想要的节点/策略组。
