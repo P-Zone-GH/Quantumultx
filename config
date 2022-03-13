@@ -121,7 +121,7 @@ server=/*testflight.apple.com/8.8.4.4
 ;direct/proxy/reject 则只能用本地图标，名字分别为 direct.png, proxy.png,reject.png 放置于 Images 文件夹下即可生效 (108*108 大小)
 
 [policy]
-static=🚀 节点选择, direct
+static=🚀 节点选择, [Trojan] Trojan， [VMess] VMESS_WS， direct
 
 static=全球加速, 🚀 节点选择, direct, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Apple_Fitness.png
 
@@ -258,7 +258,6 @@ https://raw.githubusercontent.com/Orz-3/QuantumultX/master/JS_GetCookie.conf, ta
 trojan = xray.p-zone.cyou:443, password=825b175b-b9df-44d8-9a7f-6b82f2711442, over-tls=true, tls-host=xray.p-zone.cyou, fast-open=true, udp-relay=true, tls-verification=false, tag=[Trojan] Trojan
 vmess = xray.p-zone.cyou:443, method=chacha20-ietf-poly1305, password=825b175b-b9df-44d8-9a7f-6b82f2711442, obfs=wss, obfs-host=xray.p-zone.cyou, obfs-uri=/wdpmvws, fast-open=true, udp-relay=true, tag=[VMess] VMESS_WS
 
-
 #本地分流规则(对于完全相同的某条规则，本地的将优先生效)
 [filter_local]
 ;user-agent, ?abc*, proxy
@@ -311,9 +310,6 @@ final, 🚀 节点选择
 
 # 百度搜索防跳转
 ^https?\:\/\/boxer\.baidu\.com\/scheme\?scheme url script-response-body https://raw.githubusercontent.com/app2smile/rules/master/js/baidu-no-redirect.js
-
-# 哔哩哔哩解锁大会员（目前支持解锁番剧和影视, 使用前须登陆自己的账号）
-^https?:\/\/ap(i|p)\.bilibili\.com\/bilibili\.\w{3,4}\..+\/(View|PlayView|PlayConf|PlayerOnline|MainList|ViewProgress)$ url script-request-header https://raw.githubusercontent.com/yqc007/QuantumultX/master/Script/BiLiBiLiBVIPCrack.js
 
 
 [task_local]
