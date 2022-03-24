@@ -311,6 +311,8 @@ final, 🚀 节点选择
 # 百度搜索防跳转
 ^https?\:\/\/boxer\.baidu\.com\/scheme\?scheme url script-response-body https://raw.githubusercontent.com/app2smile/rules/master/js/baidu-no-redirect.js
 
+# Spotify Premuim解锁(By app2smile)
+^https\:\/\/spclient\.wg\.spotify\.com\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$ url script-response-body https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-proto.js
 
 [task_local]
 ;任务模块，可用于签到,天气话费查询等
