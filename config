@@ -247,7 +247,7 @@ https://raw.githubusercontent.com/Orz-3/QuantumultX/master/JS_GetCookie.conf, ta
 [server_local]
 
 trojan = xray.p-zone.cyou:443, password=825b175b-b9df-44d8-9a7f-6b82f2711442, over-tls=true, tls-host=xray.p-zone.cyou, fast-open=true, udp-relay=true, tls-verification=false, tag=[Trojan] Trojan
-vmess = xray.p-zone.cyou:443, method=chacha20-ietf-poly1305, password=825b175b-b9df-44d8-9a7f-6b82f2711442, obfs=wss, obfs-host=xray.p-zone.cyou, obfs-uri=/gfegvws, fast-open=true, udp-relay=true, tag=[VMess] VMESS_WS
+vmess = xray.p-zone.cyou:443, method=chacha20-ietf-poly1305, password=825b175b-b9df-44d8-9a7f-6b82f2711442, obfs=wss, obfs-host=xray.p-zone.cyou, obfs-uri=/lwnuvws, fast-open=true, udp-relay=true, tag=[VMess] VMESS_WS
 
 #本地分流规则(对于完全相同的某条规则，本地的将优先生效)
 [filter_local]
