@@ -230,6 +230,9 @@ https://raw.githubusercontent.com/Orz-3/QuantumultX/master/TikTok.conf, tag=Tikt
 #Orz-3批量获取cookies
 https://raw.githubusercontent.com/Orz-3/QuantumultX/master/JS_GetCookie.conf, tag=Qrz-3获取cookies, update-interval=86400, opt-parser=true, enabled=false
 
+#Sub-Store订阅管理器
+https://raw.githubusercontent.com/Peng-YM/Sub-Store/master/config/QX.snippet, tag=订阅管理, update-interval=86400, opt-parser=false, enabled=true
+
 
 #服务器远程订阅
 [server_remote]
