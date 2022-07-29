@@ -233,6 +233,9 @@ https://raw.githubusercontent.com/Orz-3/QuantumultX/master/JS_GetCookie.conf, ta
 #Sub-Store订阅管理器
 https://raw.githubusercontent.com/Peng-YM/Sub-Store/master/config/QX.snippet, tag=订阅管理, update-interval=86400, opt-parser=false, enabled=true
 
+# TikTok美区
+https://raw.githubusercontent.com/Semporia/TikTok-Unlock/master/Quantumult-X/TikTok-US.conf, tag=TikTok, update-interval=86400, opt-parser=false, enabled=true
+
 
 #服务器远程订阅
 [server_remote]
@@ -307,9 +310,6 @@ final, 🚀 节点选择
 
 # Spotify Premuim解锁(By app2smile)
 ^https\:\/\/spclient\.wg\.spotify\.com\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$ url script-response-body https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-proto.js
-
-# TikTok美区
-https://raw.githubusercontent.com/Semporia/TikTok-Unlock/master/Quantumult-X/TikTok-US.conf, tag=TikTok, update-interval=86400, opt-parser=false, enabled=true
 
 [task_local]
 ;任务模块，可用于签到,天气话费查询等
