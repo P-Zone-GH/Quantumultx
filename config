@@ -308,6 +308,9 @@ final, 🚀 节点选择
 # Spotify Premuim解锁(By app2smile)
 ^https\:\/\/spclient\.wg\.spotify\.com\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$ url script-response-body https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-proto.js
 
+# TikTok美区
+https://raw.githubusercontent.com/Semporia/TikTok-Unlock/master/Quantumult-X/TikTok-US.conf, tag=TikTok, update-interval=86400, opt-parser=false, enabled=true
+
 [task_local]
 ;任务模块，可用于签到,天气话费查询等
 ;js文件放于iCloud或者本机的Quantumult X/Scripts 路径下。也可直接使用远程js链接
