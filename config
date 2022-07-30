@@ -227,17 +227,14 @@ https://raw.githubusercontent.com/Orz-3/QuantumultX/master/JD_TB_price.conf, tag
 #TestFlight区域限制解除
 https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/TestFlightDownload.conf , tag=TestFlight区域限制解除, update-interval=172800, opt-parser=false, enabled=true
 
-#Tiktok解锁
-;https://raw.githubusercontent.com/Orz-3/QuantumultX/master/TikTok.conf, tag=Tiktok解锁, update-interval=172800, opt-parser=false, enabled=true
-
-#Orz-3批量获取cookies
-https://raw.githubusercontent.com/Orz-3/QuantumultX/master/JS_GetCookie.conf, tag=Qrz-3获取cookies, update-interval=86400, opt-parser=true, enabled=false
-
 #Sub-Store订阅管理器
 https://raw.githubusercontent.com/Peng-YM/Sub-Store/master/config/QX.snippet, tag=订阅管理, update-interval=86400, opt-parser=false, enabled=true
 
 # TikTok美区
 https://raw.githubusercontent.com/Semporia/TikTok-Unlock/master/Quantumult-X/TikTok-US.conf, tag=TikTok, update-interval=86400, opt-parser=false, enabled=true
+
+#Orz-3批量获取cookies
+https://raw.githubusercontent.com/Orz-3/QuantumultX/master/JS_GetCookie.conf, tag=Qrz-3获取cookies, update-interval=86400, opt-parser=true, enabled=false
 
 #服务器远程订阅
 [server_remote]
