@@ -360,7 +360,7 @@ final, 🚀 节点选择
 [http_backend]
 # > Boxjs设置，改为使用http backend方式，访问地址改为http://127.0.0.1:9999，更新配置后请长按风车-更新，然后重启代理
 # > BoxJs相关教程参考 https://chavyleung.gitbook.io/boxjs/
-https://raw.githubusercontent.com/chavyleung/scripts/master/chavy.box.js, host=boxjs.com, tag=BoxJS, path=^/, enabled=false
+;https://raw.githubusercontent.com/chavyleung/scripts/master/chavy.box.js, host=boxjs.com, tag=BoxJS, path=^/, enabled=false
 
 #以下为证书&主机名部分
 [mitm]
