@@ -239,6 +239,15 @@ https://raw.githubusercontent.com/Semporia/TikTok-Unlock/master/Quantumult-X/Tik
 # Spotify premium
 https://raw.githubusercontent.com/app2smile/rules/master/module/spotify.conf, tag=Spotify, update-interval=86400, opt-parser=false, enabled=true
 
+#>>>>>>>>>>>应用去广告
+https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Rewrite/AdBlock/StartUp.conf, tag=应用去开屏广告@ddgksf2013, update-interval=86400, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/smzdm/smzdm_remove_ads.qxrewrite, tag=什么值得买去广告@blackmatrix7, update-interval=86400, opt-parser=false, enabled=true
+https://github.com/app2smile/rules/raw/master/module/tieba-qx.conf, tag=百度贴吧超级去广告@app2smile, update-interval=86400, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Applet/QuanX.conf, tag=微信小程序去广告@ddgksf2013, update-interval=86400, opt-parser=false, enabled=true
+https://github.com/DivineEngine/Profiles/raw/master/Quantumult/Rewrite/Block/YouTubeAds.conf, tag=油管去广告@DivineEngine, update-interval=86400, opt-parser=false, enabled=true
+https://github.com/ddgksf2013/Cuttlefish/raw/master/Rewrite/AdBlock/Ximalaya.conf, tag=喜马拉雅去广告@ddgksf2013, update-interval=86400, opt-parser=false, enabled=true
+
+
 #Orz-3批量获取cookies
 https://raw.githubusercontent.com/Orz-3/QuantumultX/master/JS_GetCookie.conf, tag=Qrz-3获取cookies, update-interval=86400, opt-parser=true, enabled=false
 
@@ -347,6 +356,11 @@ final, 🚀 节点选择
 #打开 APP , 然后手动签到 1 次, (`首页` > `红包签到`)
 4 0 * * * https://raw.githubusercontent.com/chavyleung/scripts/master/meituan/meituan.js, tag=美团, img-url=https://raw.githubusercontent.com/Orz-3/task/master/meituan.png,enabled=true
 
+
+[http_backend]
+# > Boxjs设置，改为使用http backend方式，访问地址改为http://127.0.0.1:9999，更新配置后请长按风车-更新，然后重启代理
+# > BoxJs相关教程参考 https://chavyleung.gitbook.io/boxjs/
+https://raw.githubusercontent.com/chavyleung/scripts/master/chavy.box.js, host=boxjs.com, tag=BoxJS, path=^/, enabled=false
 
 #以下为证书&主机名部分
 [mitm]
