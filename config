@@ -263,9 +263,9 @@ https://raw.githubusercontent.com/Orz-3/QuantumultX/master/JS_GetCookie.conf, ta
 
 #支持本地/iCloud的节点文件，位于Quantumult X/Profiles路径下
 ;servers.txt, tag=本地服务器, img-url=https://raw.githubusercontent.com/crossutility/Quantumult-X/master/quantumult-x.png, enabled=false
-https://gist.githubusercontent.com/P-Zone-GH/ce44637a27111032b545735bcfb927e7/raw/P.Zone, tag=P.Zone, update-interval=172800, opt-parset=false, enable=true
+https://gist.githubusercontent.com/P-Zone-GH/ce44637a27111032b545735bcfb927e7/raw/P.Zone, tag=P.Zone, update-interval=172800, opt-parset=false, enable=true, img-url=parkingsign.system
 
-https://gist.githubusercontent.com/P-Zone-GH/ce44637a27111032b545735bcfb927e7/raw/JDY, tag=JDY, update-interval=172800, opt-parset=false, enable=true
+https://gist.githubusercontent.com/P-Zone-GH/ce44637a27111032b545735bcfb927e7/raw/JDY, tag=JDY, update-interval=172800, opt-parset=false, enable=true, img-url=icloud.system
 
 # 本地服务器部分
 [server_local]
