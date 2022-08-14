@@ -123,11 +123,11 @@ server=/*testflight.apple.com/8.8.4.4
 [policy]
 available=♻️ 优选节点, server-tag-regex=^((?!P.Zone|JDY).)*$, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Naiko.png
 
-static=🚀 节点选择, ♻️ 优选节点, [Trojan] Trojan, [VMess] VMESS_WS, direct
+static=🚀 节点选择, ♻️ 优选节点, [Trojan] Trojan, [VMess] VMESS_WS, direct, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Proxy.png
 
-static=全球加速, 🚀 节点选择, direct, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Apple_Fitness.png
+static=全球加速, 🚀 节点选择, direct, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Global.png
 
-static=Telegram, 🚀 节点选择, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Available_1.png
+static=Telegram, 🚀 节点选择, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Telegram.png
 
 static=Spotify, 🚀 节点选择, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Spotify.png
 
