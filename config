@@ -339,6 +339,31 @@ final, 🚀 节点选择
 ;tag参数为 task 命名标识;
 ;img-url参数用于指定 task 的图标(108*108)
 
+2 9 * * * https://qxnav.com/rules/QuantumultX/js/jd_bean_change.js, tag=京豆变动通知, img-url=https://qxnav.com/rules/QuantumultX/img/jd.png, enabled=true
+5 0,23 * * * https://qxnav.com/rules/QuantumultX/js/lxk0301/jd_club_lottery.js, tag=摇京豆, img-url=https://qxnav.com/rules/QuantumultX/img/jdyjd.png, enabled=true
+11 1 * * * https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/scripts/jd/jd_lotteryMachine.js, tag=京东抽奖机, img-url=https://qxzy.top/rules/QuantumultX/img/jd.png, enabled=true
+1 0 * * * https://raw.githubusercontent.com/chavyleung/scripts/master/10086/10086.js, tag=中国移动, img-url=https://raw.githubusercontent.com/Orz-3/task/master/10086.png, enabled=true
+1 0 * * * https://raw.githubusercontent.com/chavyleung/scripts/master/bilibili/bilibili.js, tag=bilibili, img-url=https://raw.githubusercontent.com/Orz-3/task/master/bilibili.png, enabled=true
+10 2 8 * * * https://raw.githubusercontent.com/chavyleung/scripts/master/neteasemusic/neteasemusic.js, tag=网易云音乐, img-url=https://raw.githubusercontent.com/KOP-XIAO/QuantumultX/master/img/dragonball/2.PNG, enabled=true
+# 京东多合一签到
+#浏览器登录 https://bean.m.jd.com 点击签到并且出现签到日历
+3 0 * * * https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js, tag=京东多合一签到, img-url=https://raw.githubusercontent.com/Orz-3/task/master/jd.png,enabled=true
+
+# AcFun签到
+#打开 APP, 访问下`我的`
+;2 0 * * * https://raw.githubusercontent.com/P-Zone-GH/Quantumultx/main/js/AcFun/Acfun.js, tag=AcFun, img-url=https://raw.githubusercontent.com/Orz-3/task/master/acfun.png,enabled=true
+
+# 什么值得买
+#浏览器访问并登录: https://zhiyou.smzdm.com/user/login
+5 0 * * * https://raw.githubusercontent.com/chavyleung/scripts/master/smzdm/quanx/smzdm.js, tag=什么值得买, img-url=https://raw.githubusercontent.com/Orz-3/task/master/smzdm.png,enabled=true
+
+# 美团
+#打开 APP , 然后手动签到 1 次, (`首页` > `红包签到`)
+4 0 * * * https://raw.githubusercontent.com/chavyleung/scripts/master/meituan/meituan.js, tag=美团, img-url=https://raw.githubusercontent.com/Orz-3/task/master/meituan.png,enabled=true
+
+
+
+
 [http_backend]
 # > Boxjs设置，改为使用http backend方式，访问地址改为http://127.0.0.1:9999，更新配置后请长按风车-更新，然后重启代理
 # > BoxJs相关教程参考 https://chavyleung.gitbook.io/boxjs/
