@@ -123,7 +123,7 @@ server=/*testflight.apple.com/8.8.4.4
 [policy]
 url-latency-benchmark=♻️ 优选节点, server-tag-regex=^((?!P.Zone|JDY).)*$, check-interval=600, tolerance=0, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Naiko.png
 
-static=🚀 节点选择, ♻️ 优选节点, 🪜 proxy, [Trojan] Trojan, [VMess] VMESS_WS, direct, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Proxy.png
+static=🚀 节点选择, ♻️ 优选节点, proxy, [Trojan] Trojan, [VMess] VMESS_WS, direct, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Proxy.png
 
 static=全球加速, 🚀 节点选择, direct, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Global.png
 
