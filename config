@@ -236,7 +236,7 @@ https://raw.githubusercontent.com/Peng-YM/Sub-Store/master/config/QX.snippet, ta
 https://raw.githubusercontent.com/chavyleung/scripts/master/box/rewrite/boxjs.rewrite.quanx.conf, tag=BoxJs脚本管理, update-interval=86400, opt-parser=false, enabled=true
 
 # TikTok美区
-https://raw.githubusercontent.com/Semporia/TikTok-Unlock/master/Quantumult-X/TikTok-US.conf, tag=TikTok, update-interval=86400, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/zwf234/rules/master/TikTok/US.conf, tag=TikTok, update-interval=86400, opt-parser=false, enabled=true
 
 # Spotify premium
 https://raw.githubusercontent.com/app2smile/rules/master/module/spotify.conf, tag=Spotify, update-interval=86400, opt-parser=false, enabled=true
