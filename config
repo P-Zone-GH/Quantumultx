@@ -272,7 +272,7 @@ https://gist.githubusercontent.com/P-Zone-GH/ce44637a27111032b545735bcfb927e7/ra
 
 # 本地服务器部分
 [server_local]
-vmess = 172.64.158.96:443, method=chacha20-ietf-poly1305, password=825b175b-b9df-44d8-9a7f-6b82f2711442, obfs-host=xray.p-zone.cyou, obfs=wss, obfs-uri=/ukhzvws, tls-verification=true, fast-open=true, udp-relay=true,  aead=true, tag=[Vmess] Vmess
+vmess = 172.64.158.96:443, method=chacha20-ietf-poly1305, password=825b175b-b9df-44d8-9a7f-6b82f2711442, obfs-host=xray.p-zone.cyou, obfs=wss, obfs-uri=/ukhzvws, tls-verification=true, fast-open=true, udp-relay=true,  aead=true, tag=[Vmess] Vmess-CDN
 
 
 #本地分流规则(对于完全相同的某条规则，本地的将优先生效)
