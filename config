@@ -338,8 +338,6 @@ final, 🚀 节点选择
 ;tag参数为 task 命名标识;
 ;img-url参数用于指定 task 的图标(108*108)
 
-2 9 * * * https://qxnav.com/rules/QuantumultX/js/jd_bean_change.js, tag=京豆变动通知, img-url=https://qxnav.com/rules/QuantumultX/img/jd.png, enabled=true
-5 0,23 * * * https://qxnav.com/rules/QuantumultX/js/lxk0301/jd_club_lottery.js, tag=摇京豆, img-url=https://qxnav.com/rules/QuantumultX/img/jdyjd.png, enabled=true
 11 1 * * * https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/scripts/jd/jd_lotteryMachine.js, tag=京东抽奖机, img-url=https://qxzy.top/rules/QuantumultX/img/jd.png, enabled=true
 1 0 * * * https://raw.githubusercontent.com/chavyleung/scripts/master/10086/10086.js, tag=中国移动, img-url=https://raw.githubusercontent.com/Orz-3/task/master/10086.png, enabled=true
 1 0 * * * https://raw.githubusercontent.com/chavyleung/scripts/master/bilibili/bilibili.js, tag=bilibili, img-url=https://raw.githubusercontent.com/Orz-3/task/master/bilibili.png, enabled=true
