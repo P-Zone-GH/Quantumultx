@@ -223,7 +223,7 @@ https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/Rewrite_lhie1
 # YouTube去广告
 https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Rewrite/Block/YouTubeAds.conf, tag=YouTube去广告1, update-interval=86400, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/app2smile/rules/master/module/youtube-qx.conf, tag=YouTube去广告2, update-interval=86400, opt-parser=false, enabled=true
-https://raw.githubusercontent.com/Maasea/sgmodule/master/YoutubeAds.sgmodule, tag=YouTube去广告3, update-interval=86400, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/Maasea/sgmodule/master/YoutubeAds.sgmodule, tag=YouTube去广告3, update-interval=86400, opt-parser=true, enabled=true
 
 #京东淘宝比价
 https://raw.githubusercontent.com/Orz-3/QuantumultX/master/JD_TB_price.conf, tag=比价脚本, update-interval=172800, opt-parser=false, enabled=true
@@ -262,11 +262,11 @@ https://raw.githubusercontent.com/Orz-3/QuantumultX/master/JS_GetCookie.conf, ta
 
 #支持本地/iCloud的节点文件，位于Quantumult X/Profiles路径下
 ;servers.txt, tag=本地服务器, img-url=https://raw.githubusercontent.com/crossutility/Quantumult-X/master/quantumult-x.png, enabled=false
-https://gist.githubusercontent.com/P-Zone-GH/ce44637a27111032b545735bcfb927e7/raw/P.Zone, tag=P.Zone, update-interval=172800, opt-parset=false, enable=true, img-url=p.circle.system
+https://gist.githubusercontent.com/P-Zone-GH/ce44637a27111032b545735bcfb927e7/raw/P.Zone, tag=P.Zone, update-interval=172800, opt-parset=true, enable=true, img-url=p.circle.system
 
 https://gist.githubusercontent.com/P-Zone-GH/ce44637a27111032b545735bcfb927e7/raw/JDY, tag=JDY, update-interval=172800, opt-parset=true, enable=true, img-url=icloud.system
 
-https://gist.githubusercontent.com/P-Zone-GH/ce44637a27111032b545735bcfb927e7/raw/JDY-VIP, tag=JDY-VIP, update-interval=172800, opt-parset=false, enable=true, img-url=v.circle.system
+https://gist.githubusercontent.com/P-Zone-GH/ce44637a27111032b545735bcfb927e7/raw/JDY-VIP, tag=JDY-VIP, update-interval=172800, opt-parset=true, enable=true, img-url=v.circle.system
 
 
 # 本地服务器部分
