@@ -247,7 +247,7 @@ https://raw.githubusercontent.com/app2smile/rules/master/module/spotify.conf, ta
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/smzdm/smzdm_remove_ads.qxrewrite, tag=什么值得买去广告@blackmatrix7, update-interval=86400, opt-parser=false, enabled=true
 https://github.com/app2smile/rules/raw/master/module/tieba-qx.conf, tag=百度贴吧超级去广告@app2smile, update-interval=86400, opt-parser=false, enabled=true
 https://github.com/DivineEngine/Profiles/raw/master/Quantumult/Rewrite/Block/YouTubeAds.conf, tag=油管去广告@DivineEngine, update-interval=86400, opt-parser=false, enabled=true
-https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/startup/startup.qxrewrite, tag=开屏去广告, update-interval=86400, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/startup/startup.startup.sgmodule, tag=开屏去广告, update-interval=86400, opt-parser=false, enabled=true
 
 #Orz-3批量获取cookies
 https://raw.githubusercontent.com/Orz-3/QuantumultX/master/JS_GetCookie.conf, tag=Qrz-3获取cookies, update-interval=86400, opt-parser=true, enabled=false
@@ -264,7 +264,7 @@ https://raw.githubusercontent.com/Orz-3/QuantumultX/master/JS_GetCookie.conf, ta
 ;servers.txt, tag=本地服务器, img-url=https://raw.githubusercontent.com/crossutility/Quantumult-X/master/quantumult-x.png, enabled=false
 https://gist.githubusercontent.com/P-Zone-GH/ce44637a27111032b545735bcfb927e7/raw/P.Zone, tag=P.Zone, update-interval=172800, opt-parset=false, enable=true, img-url=p.circle.system
 
-https://gist.githubusercontent.com/P-Zone-GH/ce44637a27111032b545735bcfb927e7/raw/JDY, tag=JDY, update-interval=172800, opt-parset=false, enable=true, img-url=icloud.system
+https://gist.githubusercontent.com/P-Zone-GH/ce44637a27111032b545735bcfb927e7/raw/JDY, tag=JDY, update-interval=172800, opt-parset=true, enable=true, img-url=icloud.system
 
 https://gist.githubusercontent.com/P-Zone-GH/ce44637a27111032b545735bcfb927e7/raw/JDY-VIP, tag=JDY-VIP, update-interval=172800, opt-parset=false, enable=true, img-url=v.circle.system
 
