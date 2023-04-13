@@ -264,7 +264,7 @@ https://raw.githubusercontent.com/Orz-3/QuantumultX/master/JS_GetCookie.conf, ta
 ;servers.txt, tag=本地服务器, img-url=https://raw.githubusercontent.com/crossutility/Quantumult-X/master/quantumult-x.png, enabled=false
 https://gist.githubusercontent.com/P-Zone-GH/ce44637a27111032b545735bcfb927e7/raw/P.Zone, tag=P.Zone, img-url=p.circle.system, update-interval=86400, enable=true
 
-https://gist.githubusercontent.com/P-Zone-GH/ce44637a27111032b545735bcfb927e7/raw/JDY, tag=JDY, img-url=icloud.system, update-interval=86400, enable=true
+https://gist.githubusercontent.com/P-Zone-GH/ce44637a27111032b545735bcfb927e7/raw/JDY, tag=JDY, img-url=icloud.system, update-interval=86400, enable=true, opt-parser=true
 
 https://gist.githubusercontent.com/P-Zone-GH/ce44637a27111032b545735bcfb927e7/raw/JDY-VIP, tag=JDY-VIP, img-url=v.circle.system, update-interval=86400, enable=true
 
