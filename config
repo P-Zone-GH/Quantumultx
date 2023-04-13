@@ -280,18 +280,18 @@ vmess = 104.21.233.208:443, method=chacha20-ietf-poly1305, password=28db4603-90a
 ;host, www.google.com, proxy
 ;host-keyword, adsite, reject
 ;host-suffix, googleapis.com, proxy
-ip-cidr, 10.0.0.0/8, direct
-ip-cidr, 127.0.0.0/8, direct
-ip-cidr, 172.16.0.0/12, direct
-ip-cidr, 192.168.0.0/16, direct
-ip-cidr, 224.0.0.0/24, direct
+;ip-cidr, 10.0.0.0/8, direct
+;ip-cidr, 127.0.0.0/8, direct
+;ip-cidr, 172.16.0.0/12, direct
+;ip-cidr, 192.168.0.0/16, direct
+;ip-cidr, 224.0.0.0/24, direct
 #手动添加的策略显示在这里
 host, bianyuan.xyz, 🚀 节点选择
 host, dlj.tf, 🚀 节点选择
 host, qxzy.top, 🚀 节点选择
 host, githubusercontent.com, 🚀 节点选择
 #不在上述规则中(远程以及本地)的剩余请求，将走final 指定的节点/策略
--geoip, cn, direct
+geoip, cn, direct
 final, 🚀 节点选择
 
 
