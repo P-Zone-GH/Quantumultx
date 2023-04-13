@@ -125,17 +125,17 @@ static=🚀 节点选择, ♻️ 优选节点, proxy, direct, img-url=https://ra
 
 url-latency-benchmark=♻️ 优选节点, server-tag-regex=^((?!P.Zone|JDY).)*$, check-interval=600, tolerance=0, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Naiko.png
 
-static=全球加速, 🚀 节点选择, direct, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Global.png
+static=🌐全球加速, 🚀 节点选择, direct, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Global.png
 
-static=Telegram, 🚀 节点选择, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Telegram.png
+static=📨Telegram, 🚀 节点选择, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Telegram.png
 
-static=Spotify, 🚀 节点选择, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Spotify.png
+static=🎶Spotify, 🚀 节点选择, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Spotify.png
 
-static=YouTube, 🚀 节点选择, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/YouTube_Letter.png
+static=🎬YouTube, 🚀 节点选择, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/YouTube_Letter.png
 
-static=Streaming, 🚀 节点选择, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Streaming.png
+static=📽️Streaming, 🚀 节点选择, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Streaming.png
 
-static=Guard, reject, direct, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/JOOX.png
+static=💂‍♂️Guard, reject, direct, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/JOOX.png
 
 #server-tag-regex 以及 resource-tag-regex 参数用于正则筛选来建立策略组
 #具体可参见教程部分: https://shrtm.nu/DAFP
@@ -266,7 +266,7 @@ https://gist.githubusercontent.com/P-Zone-GH/ce44637a27111032b545735bcfb927e7/ra
 
 https://gist.githubusercontent.com/P-Zone-GH/ce44637a27111032b545735bcfb927e7/raw/JDY, tag=JDY, img-url=icloud.system, update-interval=86400, enable=true, opt-parser=true
 
-https://gist.githubusercontent.com/P-Zone-GH/ce44637a27111032b545735bcfb927e7/raw/JDY-VIP, tag=JDY-VIP, img-url=v.circle.system, update-interval=86400, enable=true
+https://gist.githubusercontent.com/P-Zone-GH/ce44637a27111032b545735bcfb927e7/raw/JDY-VIP, tag=JDY-VIP, img-url=v.circle.system, update-interval=86400, enable=true, opt-parser=true
 
 
 # 本地服务器部分
