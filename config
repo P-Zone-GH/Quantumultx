@@ -160,29 +160,29 @@ static=👮 Guard, reject, direct, img-url=https://raw.githubusercontent.com/Koo
 https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Unbreak.list, tag=后续规则修正, force-policy=direct, update-interval=432000, opt-parser=true, enabled=true
 
 # 广告拦截
-https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Guard/Advertising.list, tag=广告拦截, force-policy=Guard, update-interval=432000, opt-parser=true, enabled=true
-https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Guard/AdvertisingPlus.list#type=domain-set, tag=Advertising+, force-policy=Guard, update-interval=432000, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Guard/Advertising.list, tag=广告拦截, force-policy=👮 Guard, update-interval=432000, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Guard/AdvertisingPlus.list#type=domain-set, tag=Advertising+, force-policy=👮 Guard, update-interval=432000, opt-parser=true, enabled=true
 
 # 隐私保护
-https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Guard/Privacy.list, tag=隐私保护, force-policy=Guard, update-interval=432000, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Guard/Privacy.list, tag=隐私保护, force-policy=👮 Guard, update-interval=432000, opt-parser=true, enabled=true
 
 # 应用内追踪
-https://raw.githubusercontent.com/mieqq/mieqq/master/In-AppTracker.txt#type=domain-set, tag=应用内追踪, force-policy=Guard, update-interval=432000, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/mieqq/mieqq/master/In-AppTracker.txt#type=domain-set, tag=应用内追踪, force-policy=👮 Guard, update-interval=432000, opt-parser=true, enabled=true
 
 # 运营商劫持或恶意网站
-https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Guard/Hijacking.list, tag=运营商劫持或恶意网站, force-policy=Guard, update-interval=432000, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Guard/Hijacking.list, tag=运营商劫持或恶意网站, force-policy=👮 Guard, update-interval=432000, opt-parser=true, enabled=true
 
 # YouTube
-https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/StreamingMedia/Video/YouTube.list, tag=YouTube, force-policy=YouTube, update-interval=432000, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/StreamingMedia/Video/YouTube.list, tag=YouTube, force-policy=🎬 YouTube, update-interval=432000, opt-parser=true, enabled=true
 
 # Spotify
-https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Spotify/Spotify.list, tag=Spotify, force-policy=Spotify, update-interval=432000, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Spotify/Spotify.list, tag=Spotify, force-policy=🎶 Spotify, update-interval=432000, opt-parser=true, enabled=true
 
 # 国际流媒体服务
-https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/StreamingMedia/Streaming.list, tag=国际流媒体服务, force-policy=Streaming, update-interval=432000, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/StreamingMedia/Streaming.list, tag=国际流媒体服务, force-policy=📽️ Streaming, update-interval=432000, opt-parser=true, enabled=true
 
 # Telegram服务
-https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Extra/Telegram/Telegram.list, tag=Telegram, force-policy=Telegram, update-interval=432000, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Extra/Telegram/Telegram.list, tag=Telegram, force-policy=📨 Telegram, update-interval=432000, opt-parser=true, enabled=true
 
 # 全球加速
 https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Global.list, tag=全球加速, force-policy=proxy, update-interval=432000, opt-parser=true, enabled=true
