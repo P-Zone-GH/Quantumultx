@@ -157,48 +157,46 @@ static=💂‍♂️Guard, reject, direct, img-url=https://raw.githubusercontent
 [filter_remote]
 #远程分流模块，可使用force-policy来强制使用策略偏好, 替换远程规则内所指定的策略组
 ;同样的
-# update-interval 为更新时间参数，单位 秒, 默认更新时间为 24*60*60=86400 秒，也就是24小时。
-# opt-parser=true/false 用于控制是否对本订阅 开启资源解析器，不写或者 false 表示不启用解析器;
 
 # 后续规则修正
-https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Unbreak.list, tag=后续规则修正, force-policy=direct, update-interval=86400, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Unbreak.list, tag=后续规则修正, force-policy=direct, update-interval=432000, opt-parser=true, enabled=true
 
 # 广告拦截
-https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Guard/Advertising.list, tag=广告拦截, force-policy=Guard, update-interval=86400, opt-parser=true, enabled=true
-https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Guard/AdvertisingPlus.list#type=domain-set, tag=Advertising+, force-policy=Guard, update-interval=86400, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Guard/Advertising.list, tag=广告拦截, force-policy=Guard, update-interval=432000, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Guard/AdvertisingPlus.list#type=domain-set, tag=Advertising+, force-policy=Guard, update-interval=432000, opt-parser=true, enabled=true
 
 # 隐私保护
-https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Guard/Privacy.list, tag=隐私保护, force-policy=Guard, update-interval=86400, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Guard/Privacy.list, tag=隐私保护, force-policy=Guard, update-interval=432000, opt-parser=true, enabled=true
 
 # 应用内追踪
-https://raw.githubusercontent.com/mieqq/mieqq/master/In-AppTracker.txt#type=domain-set, tag=应用内追踪, force-policy=Guard, update-interval=86400, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/mieqq/mieqq/master/In-AppTracker.txt#type=domain-set, tag=应用内追踪, force-policy=Guard, update-interval=432000, opt-parser=true, enabled=true
 
 # 运营商劫持或恶意网站
-https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Guard/Hijacking.list, tag=运营商劫持或恶意网站, force-policy=Guard, update-interval=86400, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Guard/Hijacking.list, tag=运营商劫持或恶意网站, force-policy=Guard, update-interval=432000, opt-parser=true, enabled=true
 
 # YouTube
-https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/StreamingMedia/Video/YouTube.list, tag=YouTube, force-policy=YouTube, update-interval=86400, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/StreamingMedia/Video/YouTube.list, tag=YouTube, force-policy=YouTube, update-interval=432000, opt-parser=true, enabled=true
 
 # Spotify
-https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Spotify/Spotify.list, tag=Spotify, force-policy=Spotify, update-interval=86400, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Spotify/Spotify.list, tag=Spotify, force-policy=Spotify, update-interval=432000, opt-parser=true, enabled=true
 
 # 国际流媒体服务
-https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/StreamingMedia/Streaming.list, tag=国际流媒体服务, force-policy=Streaming, update-interval=86400, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/StreamingMedia/Streaming.list, tag=国际流媒体服务, force-policy=Streaming, update-interval=432000, opt-parser=true, enabled=true
 
 # Telegram服务
-https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Extra/Telegram/Telegram.list, tag=Telegram, force-policy=Telegram, update-interval=86400, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Extra/Telegram/Telegram.list, tag=Telegram, force-policy=Telegram, update-interval=432000, opt-parser=true, enabled=true
 
 # 全球加速
-https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Global.list, tag=全球加速, force-policy=proxy, update-interval=86400, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Global.list, tag=全球加速, force-policy=proxy, update-interval=432000, opt-parser=true, enabled=true
 
 # Apple 服务
-https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Extra/Apple/Apple.list, tag=Apple, force-policy=direct, update-interval=86400, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Extra/Apple/Apple.list, tag=Apple, force-policy=direct, update-interval=432000, opt-parser=true, enabled=true
 
 # 中国直连
-https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/China.list, tag=中国直连, force-policy=direct, update-interval=86400, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/China.list, tag=中国直连, force-policy=direct, update-interval=432000, opt-parser=true, enabled=true
 
 # TikTok
-https://raw.githubusercontent.com/Semporia/TikTok-Unlock/master/Quantumult-X/TikTok.list, tag=TikTok, force-policy=proxy, update-interval=86400, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/Semporia/TikTok-Unlock/master/Quantumult-X/TikTok.list, tag=TikTok, force-policy=proxy, update-interval=432000, opt-parser=true, enabled=true
 
 #支持本地/iCloud规则文件，位于Quantumult X/Profiles路径下
 ;filter.txt, tag=本地分流, enabled=false
@@ -212,45 +210,45 @@ https://raw.githubusercontent.com/Semporia/TikTok-Unlock/master/Quantumult-X/Tik
 # opt-parser=true/false 用于控制是否对本订阅 开启资源解析器，不写或者 false 表示不启用解析器;
 
 # 神机复写
-https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Rewrite/General.conf, tag=神机复写, update-interval=86400, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Rewrite/General.conf, tag=神机复写, update-interval=432000, opt-parser=false, enabled=true
 
 # 神机去广告
-https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Rewrite/Block/Advertising.conf, tag=神机去广告, update-interval=86400, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Rewrite/Block/Advertising.conf, tag=神机去广告, update-interval=432000, opt-parser=false, enabled=true
 
 # NobyDa去广告
-https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/Rewrite_lhie1.conf, tag=NobyDa去广告, update-interval=86400, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/Rewrite_lhie1.conf, tag=NobyDa去广告, update-interval=432000, opt-parser=true, enabled=true
 
 # YouTube去广告
-https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Rewrite/Block/YouTubeAds.conf, tag=YouTube去广告1, update-interval=86400, opt-parser=false, enabled=true
-https://raw.githubusercontent.com/app2smile/rules/master/module/youtube-qx.conf, tag=YouTube去广告2, update-interval=86400, opt-parser=false, enabled=true
-https://raw.githubusercontent.com/Maasea/sgmodule/master/YoutubeAds.sgmodule, tag=YouTube去广告3, update-interval=86400, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Rewrite/Block/YouTubeAds.conf, tag=YouTube去广告1, update-interval=432000, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/app2smile/rules/master/module/youtube-qx.conf, tag=YouTube去广告2, update-interval=432000, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/Maasea/sgmodule/master/YoutubeAds.sgmodule, tag=YouTube去广告3, update-interval=432000, opt-parser=true, enabled=true
 
 # 京东淘宝比价
-# https://raw.githubusercontent.com/Orz-3/QuantumultX/master/JD_TB_price.conf, tag=比价脚本, update-interval=172800, opt-parser=false, enabled=true
+# https://raw.githubusercontent.com/Orz-3/QuantumultX/master/JD_TB_price.conf, tag=比价脚本, update-interval=432000, opt-parser=false, enabled=true
 
 # TestFlight区域限制解除
-https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/TestFlightDownload.conf , tag=TestFlight区域限制解除, update-interval=172800, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/TestFlightDownload.conf , tag=TestFlight区域限制解除, update-interval=432000, opt-parser=false, enabled=true
 
 # Sub-Store订阅管理器
-https://raw.githubusercontent.com/Peng-YM/Sub-Store/master/config/QX.snippet, tag=Sub-Store订阅管理, update-interval=86400, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/Peng-YM/Sub-Store/master/config/QX.snippet, tag=Sub-Store订阅管理, update-interval=432000, opt-parser=false, enabled=true
 
 # BoxJs脚本管理
-https://raw.githubusercontent.com/chavyleung/scripts/master/box/rewrite/boxjs.rewrite.quanx.conf, tag=BoxJs脚本管理, update-interval=86400, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/chavyleung/scripts/master/box/rewrite/boxjs.rewrite.quanx.conf, tag=BoxJs脚本管理, update-interval=432000, opt-parser=false, enabled=true
 
 # TikTok美区
-https://raw.githubusercontent.com/zwf234/rules/master/TikTok/US.conf, tag=TikTok, update-interval=86400, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/zwf234/rules/master/TikTok/US.conf, tag=TikTok, update-interval=432000, opt-parser=false, enabled=true
 
 # Spotify premium
-https://raw.githubusercontent.com/app2smile/rules/master/module/spotify.conf, tag=Spotify, update-interval=86400, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/app2smile/rules/master/module/spotify.conf, tag=Spotify, update-interval=432000, opt-parser=false, enabled=true
 
 #>>>>>>>>>>>应用去广告
-https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/smzdm/smzdm_remove_ads.qxrewrite, tag=什么值得买去广告@blackmatrix7, update-interval=86400, opt-parser=false, enabled=true
-https://github.com/app2smile/rules/raw/master/module/tieba-qx.conf, tag=百度贴吧超级去广告@app2smile, update-interval=86400, opt-parser=false, enabled=true
-https://github.com/DivineEngine/Profiles/raw/master/Quantumult/Rewrite/Block/YouTubeAds.conf, tag=油管去广告@DivineEngine, update-interval=86400, opt-parser=false, enabled=true
-https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/startup/startup.sgmodule, tag=开屏去广告, update-interval=86400, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/smzdm/smzdm_remove_ads.qxrewrite, tag=什么值得买去广告@blackmatrix7, update-interval=432000, opt-parser=false, enabled=true
+https://github.com/app2smile/rules/raw/master/module/tieba-qx.conf, tag=百度贴吧超级去广告@app2smile, update-interval=8432000, opt-parser=false, enabled=true
+https://github.com/DivineEngine/Profiles/raw/master/Quantumult/Rewrite/Block/YouTubeAds.conf, tag=油管去广告@DivineEngine, update-interval=432000, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/startup/startup.sgmodule, tag=开屏去广告, update-interval=432000, opt-parser=true, enabled=true
 
 # Orz-3批量获取cookies
-https://raw.githubusercontent.com/Orz-3/QuantumultX/master/JS_GetCookie.conf, tag=Qrz-3获取cookies, update-interval=86400, opt-parser=true, enabled=false
+https://raw.githubusercontent.com/Orz-3/QuantumultX/master/JS_GetCookie.conf, tag=Qrz-3获取cookies, update-interval=432000, opt-parser=true, enabled=false
 
 #服务器远程订阅
 [server_remote]
@@ -271,15 +269,15 @@ https://gist.githubusercontent.com/P-Zone-GH/ce44637a27111032b545735bcfb927e7/ra
 
 # 本地服务器部分
 [server_local]
-vmess = 104.21.233.208:443, method=chacha20-ietf-poly1305, password=28db4603-90ad-4216-913f-d7b5e8a1f9e3, obfs-host=xray.p-zone.cyou, obfs=wss, obfs-uri=/vws, tls-verification=true, fast-open=true, udp-relay=true,  aead=true, tag=[Vmess] Vmess-CDN
+vmess = 141.101.115.146:443, method=chacha20-ietf-poly1305, password=28db4603-90ad-4216-913f-d7b5e8a1f9e3, obfs-host=xray.p-zone.cyou, obfs=wss, obfs-uri=/vws, tls-verification=true, fast-open=true, udp-relay=true,  aead=true, tag=[Vmess] Vmess-CDN
 
 
 #本地分流规则(对于完全相同的某条规则，本地的将优先生效)
 [filter_local]
 ;user-agent, ?abc*, proxy
 ;host, www.google.com, proxy
-host-keyword, adsite, reject
-host-keyword, adservices, reject
+;host-keyword, adsite, reject
+;host-keyword, adservices, reject
 ;host-suffix, googleapis.com, proxy
 ;ip-cidr, 10.0.0.0/8, direct
 ;ip-cidr, 127.0.0.0/8, direct
@@ -292,7 +290,7 @@ host-suffix, dlj.tf, 🚀 节点选择
 host-suffix, qxzy.top, 🚀 节点选择
 host-suffix, githubusercontent.com, 🚀 节点选择
 #不在上述规则中(远程以及本地)的剩余请求，将走final 指定的节点/策略
-geoip, cn, direct
+;geoip, cn, direct
 final, 🚀 节点选择
 
 
