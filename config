@@ -160,8 +160,8 @@ static=💂‍♂️Guard, reject, direct, img-url=https://raw.githubusercontent
 https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Unbreak.list, tag=后续规则修正, force-policy=direct, update-interval=432000, opt-parser=true, enabled=true
 
 # 广告拦截
-https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Guard/Advertising.list, tag=广告拦截, force-policy=Guard, update-interval=432000, opt-parser=true, enabled=true
-https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Guard/AdvertisingPlus.list#type=domain-set, tag=Advertising+, force-policy=Guard, update-interval=432000, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Guard/Advertising.list, tag=广告拦截, force-policy=reject, update-interval=432000, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Guard/AdvertisingPlus.list#type=domain-set, tag=Advertising+, force-policy=reject, update-interval=432000, opt-parser=true, enabled=true
 
 # 隐私保护
 https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Guard/Privacy.list, tag=隐私保护, force-policy=Guard, update-interval=432000, opt-parser=true, enabled=true
