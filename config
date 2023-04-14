@@ -279,6 +279,7 @@ vmess = 104.21.233.208:443, method=chacha20-ietf-poly1305, password=28db4603-90a
 ;user-agent, ?abc*, proxy
 ;host, www.google.com, proxy
 host-keyword, adsite, reject
+host-keyword, adservices, reject
 ;host-suffix, googleapis.com, proxy
 ;ip-cidr, 10.0.0.0/8, direct
 ;ip-cidr, 127.0.0.0/8, direct
