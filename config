@@ -125,17 +125,17 @@ static=🚀 节点选择, ♻️ 优选节点, proxy, direct, img-url=https://ra
 
 url-latency-benchmark=♻️ 优选节点, server-tag-regex=^((?!P.Zone|JDY).)*$, check-interval=600, tolerance=0, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Naiko.png
 
-static=🌐全球加速, 🚀 节点选择, direct, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Global.png
+static=🌐 全球加速, 🚀 节点选择, direct, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Global.png
 
-static=📨Telegram, 🚀 节点选择, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Telegram.png
+static=📨 Telegram, 🚀 节点选择, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Telegram.png
 
-static=🎶Spotify, 🚀 节点选择, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Spotify.png
+static=🎶 Spotify, 🚀 节点选择, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Spotify.png
 
-static=🎬YouTube, 🚀 节点选择, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/YouTube_Letter.png
+static=🎬 YouTube, 🚀 节点选择, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/YouTube_Letter.png
 
-static=📽️Streaming, 🚀 节点选择, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Streaming.png
+static=📽️ Streaming, 🚀 节点选择, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Streaming.png
 
-static=Guard, reject, direct, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/JOOX.png
+static=👮 Guard, reject, direct, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Reject.png
 
 #server-tag-regex 以及 resource-tag-regex 参数用于正则筛选来建立策略组
 #具体可参见教程部分: https://shrtm.nu/DAFP
@@ -309,15 +309,15 @@ host-suffix, githubusercontent.com, 🚀 节点选择
 ;ip-cidr, ServerA's IP Range, ServerB
 
 // ip 规则
-ip-cidr, 10.0.0.0/8, direct
-ip-cidr, 127.0.0.0/8, direct
-ip-cidr, 172.16.0.0/12, direct
-ip-cidr, 192.168.0.0/16, direct
-ip-cidr, 224.0.0.0/24, direct
+;ip-cidr, 10.0.0.0/8, direct
+;ip-cidr, 127.0.0.0/8, direct
+;ip-cidr, 172.16.0.0/12, direct
+;ip-cidr, 192.168.0.0/16, direct
+;ip-cidr, 224.0.0.0/24, direct
 //ipv6 规则
 ;ip6-cidr, 2001:4860:4860::8888/32, direct
-# 已采用 ip 池数据，因此注释掉 geoip cn
-;geoip, cn, direct
+# ip 池数据和geoip cn两者启用一个就行
+geoip, cn, direct
 
 # 1.0.28 build628 后支持如下的geoip库写法（需 GEO-IP 库支持）
 ;geoip, netflix, proxy
