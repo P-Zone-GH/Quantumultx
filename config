@@ -135,7 +135,7 @@ static=🎬YouTube, 🚀 节点选择, img-url=https://raw.githubusercontent.com
 
 static=📽️Streaming, 🚀 节点选择, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Streaming.png
 
-static=💂‍♂️Guard, reject, direct, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/JOOX.png
+static=Guard, reject, direct, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/JOOX.png
 
 #server-tag-regex 以及 resource-tag-regex 参数用于正则筛选来建立策略组
 #具体可参见教程部分: https://shrtm.nu/DAFP
@@ -160,8 +160,8 @@ static=💂‍♂️Guard, reject, direct, img-url=https://raw.githubusercontent
 https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Unbreak.list, tag=后续规则修正, force-policy=direct, update-interval=432000, opt-parser=true, enabled=true
 
 # 广告拦截
-https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Guard/Advertising.list, tag=广告拦截, force-policy=reject, update-interval=432000, opt-parser=true, enabled=true
-https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Guard/AdvertisingPlus.list#type=domain-set, tag=Advertising+, force-policy=reject, update-interval=432000, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Guard/Advertising.list, tag=广告拦截, force-policy=Guard, update-interval=432000, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Guard/AdvertisingPlus.list#type=domain-set, tag=Advertising+, force-policy=Guard, update-interval=432000, opt-parser=true, enabled=true
 
 # 隐私保护
 https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Guard/Privacy.list, tag=隐私保护, force-policy=Guard, update-interval=432000, opt-parser=true, enabled=true
