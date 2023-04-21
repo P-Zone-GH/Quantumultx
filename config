@@ -286,10 +286,7 @@ vmess = 141.101.115.146:443, method=chacha20-ietf-poly1305, password=28db4603-90
 ;host-wildcard, *abc.com, proxy
 
 #手动添加的策略显示在这里
-host-suffix, bianyuan.xyz, 🚀 节点选择
-host-suffix, dlj.tf, 🚀 节点选择
-host-suffix, qxzy.top, 🚀 节点选择
-host-suffix, githubusercontent.com, 🚀 节点选择
+
 
 // User-Agent 匹配
 ;user-agent, ?abc*, proxy
@@ -322,9 +319,9 @@ geoip, cn, direct
 # 1.0.28 build628 后支持如下的geoip库写法（需 GEO-IP 库支持）
 ;geoip, netflix, proxy
 
-#不在上述规则中(远程以及本地)的剩余请求，将走final 指定的节点/策略，这里即是 → 🕹 终极清单, 请根据自己的需求来选择直连或节点、策略
+#不在上述规则中(远程以及本地)的剩余请求，将走final 指定的节点/策略，请根据自己的需求来选择直连或节点、策略
 #此为必需规则，仅可修改对应策略组，请勿删除 final
-final, 🚀 节点选择
+Final, 🚀 节点选择
 
 
 #本地复写规则
