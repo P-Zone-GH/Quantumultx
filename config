@@ -49,8 +49,29 @@ excluded_routes=239.255.255.250/32, 24.105.30.129/32, 185.60.112.157/32, 185.60.
 no-ipv6
 
 # 自定义 DNS
-# DNSPod Public DNS
+# DNSPod Public DNS（腾讯）
 server=119.29.29.29
+
+#阿里 AliDNS
+server=223.5.5.5
+server=223.6.6.6
+
+#中科大防污染DNS
+#中国电信
+server=202.141.162.123
+#中国移动
+server=202.141.176.93
+
+#Cloudflare & APNIC
+server=1.1.1.1
+server=2001:2001::
+
+#Google DNS
+server=8.8.8.8
+server=4.4.4.4
+server=2001:4860:4860::8888
+server=2001:4860:4860::8844
+
 
 # DNS over HTTPS
 ;doh-server=https://dns.alidns.com/dns-query
