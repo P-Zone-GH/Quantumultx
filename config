@@ -215,7 +215,7 @@ https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Ext
 https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/China.list, tag=中国直连, force-policy=direct, update-interval=432000, opt-parser=true, enabled=true
 
 # TikTok
-https://raw.githubusercontent.com/Semporia/TikTok-Unlock/master/Quantumult-X/TikTok.list, tag=TikTok, force-policy=proxy, update-interval=432000, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/Semporia/TikTok-Unlock/master/Quantumult-X/TikTok.list, tag=TikTok, force-policy=🚀 节点选择, update-interval=86400, opt-parser=false, enabled=true
 
 #支持本地/iCloud规则文件，位于Quantumult X/Profiles路径下
 ;filter.txt, tag=本地分流, enabled=false
@@ -255,7 +255,7 @@ https://raw.githubusercontent.com/Peng-YM/Sub-Store/master/config/QX.snippet, ta
 https://raw.githubusercontent.com/chavyleung/scripts/master/box/rewrite/boxjs.rewrite.quanx.conf, tag=BoxJs脚本管理, update-interval=432000, opt-parser=false, enabled=true
 
 # TikTok美区
-https://raw.githubusercontent.com/zwf234/rules/master/TikTok/US.conf, tag=TikTok, update-interval=432000, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/Semporia/TikTok-Unlock/master/Quantumult-X/TikTok-US.conf, tag=TikTok, update-interval=86400, opt-parser=false, enabled=true
 
 # Spotify premium
 https://raw.githubusercontent.com/app2smile/rules/master/module/spotify.conf, tag=Spotify, update-interval=432000, opt-parser=false, enabled=true
@@ -379,6 +379,9 @@ Final, 🚀 节点选择
 
 # Spotify Premuim解锁(By app2smile)
 ^https\:\/\/spclient\.wg\.spotify\.com\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$ url script-response-body https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-proto.js
+
+#TikTok
+(?<=_region=)US(?=&) url 307 US
 
 [task_local]
 ;任务模块，可用于签到,天气话费查询等
