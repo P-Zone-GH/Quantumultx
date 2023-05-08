@@ -64,7 +64,7 @@ server=202.141.176.93
 
 #Cloudflare & APNIC
 server=1.1.1.1
-server=2001:2001::
+server=2001::2001::
 
 #Google DNS
 server=8.8.8.8
