@@ -388,7 +388,7 @@ Final, 🚀 节点选择
 ^https\:\/\/spclient\.wg\.spotify\.com\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$ url script-response-body https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-proto.js
 
 #TikTok
-(?<=_region=)US(?=&) url 307 US
+(?<=_region=)JP(?=&) url 307 JP
 
 [task_local]
 ;任务模块，可用于签到,天气话费查询等
