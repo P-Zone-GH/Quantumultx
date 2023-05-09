@@ -387,8 +387,11 @@ Final, 🚀 节点选择
 # Spotify Premuim解锁(By app2smile)
 ^https\:\/\/spclient\.wg\.spotify\.com\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$ url script-response-body https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-proto.js
 
-#TikTok
+#TikTok换区
 (?<=_region=)CN(?=&) url 307 JP
+(?<=_region=)CN(?=&) url 307 TW
+(?<=_region=)CN(?=&) url 307 KR
+(?<=_region=)CN(?=&) url 307 US
 
 [task_local]
 ;任务模块，可用于签到,天气话费查询等
