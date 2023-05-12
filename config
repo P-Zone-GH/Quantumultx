@@ -258,11 +258,11 @@ https://raw.githubusercontent.com/chavyleung/scripts/master/box/rewrite/boxjs.re
 # 日区
 https://raw.githubusercontent.com/Semporia/TikTok-Unlock/master/Quantumult-X/TikTok-JP.conf, tag=TikTok, update-interval=86400, opt-parser=false, enabled=true
 # 湾湾
-https://raw.githubusercontent.com/Semporia/TikTok-Unlock/master/Quantumult-X/TikTok-TW.conf, tag=TikTok, update-interval=86400, opt-parser=false, enabled=true
+;https://raw.githubusercontent.com/Semporia/TikTok-Unlock/master/Quantumult-X/TikTok-TW.conf, tag=TikTok, update-interval=86400, opt-parser=false, enabled=true
 # 韩区
-https://raw.githubusercontent.com/Semporia/TikTok-Unlock/master/Quantumult-X/TikTok-KR.conf, tag=TikTok, update-interval=86400, opt-parser=false, enabled=true
+;https://raw.githubusercontent.com/Semporia/TikTok-Unlock/master/Quantumult-X/TikTok-KR.conf, tag=TikTok, update-interval=86400, opt-parser=false, enabled=true
 # 美区
-https://raw.githubusercontent.com/Semporia/TikTok-Unlock/master/Quantumult-X/TikTok-US.conf, tag=TikTok, update-interval=86400, opt-parser=false, enabled=true
+;https://raw.githubusercontent.com/Semporia/TikTok-Unlock/master/Quantumult-X/TikTok-US.conf, tag=TikTok, update-interval=86400, opt-parser=false, enabled=true
 
 # Spotify premium
 https://raw.githubusercontent.com/app2smile/rules/master/module/spotify.conf, tag=Spotify, update-interval=432000, opt-parser=false, enabled=true
@@ -389,9 +389,9 @@ Final, 🚀 节点选择
 
 #TikTok换区
 (?<=_region=)CN(?=&) url 307 JP
-(?<=_region=)CN(?=&) url 307 TW
-(?<=_region=)CN(?=&) url 307 KR
-(?<=_region=)CN(?=&) url 307 US
+;(?<=_region=)CN(?=&) url 307 TW
+;(?<=_region=)CN(?=&) url 307 KR
+;(?<=_region=)CN(?=&) url 307 US
 
 [task_local]
 ;任务模块，可用于签到,天气话费查询等
