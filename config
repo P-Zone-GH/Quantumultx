@@ -184,9 +184,6 @@ https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Unb
 https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Guard/Advertising.list, tag=广告拦截, force-policy=👮 Guard, update-interval=432000, opt-parser=true, enabled=true
 https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Guard/AdvertisingPlus.list#type=domain-set, tag=Advertising+, force-policy=👮 Guard, update-interval=432000, opt-parser=true, enabled=true
 
-#FMZ200去APP广告
-https://raw.githubusercontent.com/fmz200/wool_scripts/main/QuantumultX/rewrite/chongxie.txt#out=youtube+xima+kuwo, tag=fmz200去APP广告, force-policy=👮 Guard, update-interval=432000, opt-parser=true, enabled=true
-
 # 隐私保护
 https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Guard/Privacy.list, tag=隐私保护, force-policy=👮 Guard, update-interval=432000, opt-parser=true, enabled=true
 
@@ -276,6 +273,7 @@ https://github.com/app2smile/rules/raw/master/module/tieba-qx.conf, tag=百度�
 https://github.com/DivineEngine/Profiles/raw/master/Quantumult/Rewrite/Block/YouTubeAds.conf, tag=油管去广告@DivineEngine, update-interval=432000, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/startup/startup.sgmodule, tag=开屏去广告, update-interval=432000, opt-parser=true, enabled=true
 https://github.com/ddgksf2013/Rewrite/raw/master/AdBlock/StartUp.conf, tag=墨鱼去开屏广告, update-interval=432000, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/fmz200/wool_scripts/main/QuantumultX/rewrite/chongxie.txt#out=youtube+xima+kuwo, tag=fmz200去APP广告, update-interval=432000, opt-parser=true, enabled=true
 
 # Orz-3批量获取cookies
 https://raw.githubusercontent.com/Orz-3/QuantumultX/master/JS_GetCookie.conf, tag=Qrz-3获取cookies, update-interval=432000, opt-parser=true, enabled=false
