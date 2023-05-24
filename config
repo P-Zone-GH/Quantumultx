@@ -206,7 +206,7 @@ https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Str
 https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Extra/Telegram/Telegram.list, tag=Telegram, force-policy=📨 Telegram, update-interval=432000, opt-parser=true, enabled=true
 
 # 全球加速
-https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Global.list, tag=全球加速, force-policy=proxy, update-interval=432000, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Global.list, tag=全球加速, force-policy=🌐 全球加速, update-interval=432000, opt-parser=true, enabled=true
 
 # Apple 服务
 https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Extra/Apple/Apple.list, tag=Apple, force-policy=direct, update-interval=432000, opt-parser=true, enabled=true
