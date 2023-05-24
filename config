@@ -215,7 +215,7 @@ https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Ext
 https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/China.list, tag=中国直连, force-policy=direct, update-interval=432000, opt-parser=true, enabled=true
 
 # TikTok
-https://raw.githubusercontent.com/Semporia/TikTok-Unlock/master/Quantumult-X/TikTok.list, tag=TikTok, force-policy=🚀 节点选择, update-interval=86400, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/Semporia/TikTok-Unlock/master/Quantumult-X/TikTok.list, tag=TikTok, force-policy=proxy, update-interval=86400, opt-parser=false, enabled=true
 
 #支持本地/iCloud规则文件，位于Quantumult X/Profiles路径下
 ;filter.txt, tag=本地分流, enabled=false
