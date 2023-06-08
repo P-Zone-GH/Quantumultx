@@ -144,7 +144,7 @@ server=/*testflight.apple.com/8.8.4.4
 
 static=🚀 节点选择, ♻️ 优选节点, proxy, direct, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Proxy.png
 
-url-latency-benchmark=♻️ 优选节点, server-tag-regex=^((?!P.Zone|JDY).)*$, check-interval=600, tolerance=0, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Renzhe.png
+url-latency-benchmark=♻️ 优选节点, server-tag-regex=^((?!P.Zone|JDY|CDN).)*$, check-interval=600, tolerance=0, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Renzhe.png
 
 static=🌐 全球加速, 🚀 节点选择, direct, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/World_Map.png
 
@@ -268,7 +268,6 @@ https://raw.githubusercontent.com/app2smile/rules/master/module/spotify.conf, ta
 # 应用去广告
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/smzdm/smzdm_remove_ads.qxrewrite, tag=什么值得买去广告@blackmatrix7, update-interval=432000, opt-parser=false, enabled=true
 https://github.com/app2smile/rules/raw/master/module/tieba-qx.conf, tag=百度贴吧超级去广告@app2smile, update-interval=432000, opt-parser=false, enabled=true
-https://github.com/DivineEngine/Profiles/raw/master/Quantumult/Rewrite/Block/YouTubeAds.conf, tag=油管去广告@DivineEngine, update-interval=432000, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/startup/startup.sgmodule, tag=开屏去广告, update-interval=432000, opt-parser=true, enabled=true
 https://github.com/ddgksf2013/Rewrite/raw/master/AdBlock/StartUp.conf, tag=墨鱼去开屏广告, update-interval=432000, opt-parser=true, enabled=true
 https://raw.githubusercontent.com/fmz200/wool_scripts/main/QuantumultX/rewrite/chongxie.txt#out=youtube+xima+kuwo, tag=fmz200去APP广告, update-interval=432000, opt-parser=true, enabled=true
