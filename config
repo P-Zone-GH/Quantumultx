@@ -288,7 +288,7 @@ https://gist.githubusercontent.com/P-Zone-GH/ce44637a27111032b545735bcfb927e7/ra
 
 # 本地服务器部分
 [server_local]
-vmess = 199.15.76.35:443, method=aes-128-gcm, password=28db4603-90ad-4216-913f-d7b5e8a1f9e3, obfs-host=xray.p-zone.cyou, obfs=wss, obfs-uri=/bqrmvws, tls-verification=true, fast-open=true, udp-relay=true,  aead=true, tag=[Vmess] Telecom-CDN
+vmess = 162.159.7.208:443, method=aes-128-gcm, password=28db4603-90ad-4216-913f-d7b5e8a1f9e3, obfs-host=xray.p-zone.cyou, obfs=wss, obfs-uri=/bqrmvws, tls-verification=true, fast-open=true, udp-relay=true,  aead=true, tag=[Vmess] Telecom-CDN
 vmess = 104.21.22.125:443, method=aes-128-gcm, password=28db4603-90ad-4216-913f-d7b5e8a1f9e3, obfs-host=xray.p-zone.cyou, obfs=wss, obfs-uri=/bqrmvws, tls-verification=true, fast-open=true, udp-relay=true,  aead=true, tag=[Vmess] Mobile-CDN
 
 
