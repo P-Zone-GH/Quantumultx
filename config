@@ -245,6 +245,9 @@ https://raw.githubusercontent.com/Maasea/sgmodule/master/YoutubeAds.sgmodule, ta
 # 小红书去广告
 https://raw.githubusercontent.com/Moli-X/Resources/main/Rewrite/XHS.conf, tag=小红书, update-interval=172800, opt-parser=true, enabled=true
 
+# 高德去广告
+https://yfamily.vercel.app/rewrite/gddt.conf, tag=高德去广告, update-interval=172800, opt-parser=true, enabled=true
+
 # 京东淘宝比价
 # https://raw.githubusercontent.com/Orz-3/QuantumultX/master/JD_TB_price.conf, tag=比价脚本, update-interval=432000, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/zwf234/rules/master/QuantumultX/price.conf, tag=京东淘宝比价, update-interval=172800, opt-parser=true, enabled=true
@@ -267,6 +270,12 @@ https://raw.githubusercontent.com/app2smile/rules/master/module/spotify.conf, ta
 
 # 微信读书VIP
 https://raw.githubusercontent.com/WeiRen0/Scripts/main/wxds.js, tag=微信读书, update-interval=172800, opt-parser=true, enabled=true
+
+# Keep VIP
+https://yfamily.vercel.app/rewrite/keep.conf, tag=Keep, update-interval=172800, opt-parser=false, enabled=true
+
+#哔哩哔哩 1080P
+https://yfamily.vercel.app/rewrite/bili.conf, tag=Bilibili 1080P, update-interval=172800, opt-parser=false, enabled=true
 
 # 应用去广告
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/smzdm/smzdm_remove_ads.qxrewrite, tag=什么值得买去广告@blackmatrix7, update-interval=432000, opt-parser=false, enabled=true
