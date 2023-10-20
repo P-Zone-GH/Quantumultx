@@ -243,7 +243,7 @@ https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/Rewrite_lhie1
 https://raw.githubusercontent.com/Maasea/sgmodule/master/YoutubeAds.sgmodule, tag=YouTube去广告, update-interval=432000, opt-parser=true, enabled=true
 
 # 小红书去广告
-https://raw.githubusercontent.com/Moli-X/Resources/main/Rewrite/XHS.conf, tag=小红书, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/Moli-X/Resources/main/Rewrite/XHS.conf, tag=小红书去广告, update-interval=172800, opt-parser=true, enabled=true
 
 # 高德去广告
 https://yfamily.vercel.app/rewrite/gddt.conf, tag=高德去广告, update-interval=172800, opt-parser=true, enabled=true
@@ -261,18 +261,17 @@ https://raw.githubusercontent.com/Peng-YM/Sub-Store/master/config/QX.snippet, ta
 # BoxJs脚本管理
 https://raw.githubusercontent.com/chavyleung/scripts/master/box/rewrite/boxjs.rewrite.quanx.conf, tag=BoxJs脚本管理, update-interval=432000, opt-parser=false, enabled=true
 
-# TikTok各区
-# 美区
+# TikTok美区
 https://raw.githubusercontent.com/Semporia/TikTok-Unlock/master/Quantumult-X/TikTok-US.conf, tag=TikTok, update-interval=86400, opt-parser=false, enabled=true
 
 # Spotify premium
-https://raw.githubusercontent.com/app2smile/rules/master/module/spotify.conf, tag=Spotify, update-interval=432000, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/app2smile/rules/master/module/spotify.conf, tag=Spotify premium, update-interval=432000, opt-parser=false, enabled=true
 
 # 微信读书VIP
-https://raw.githubusercontent.com/WeiRen0/Scripts/main/wxds.js, tag=微信读书, update-interval=172800, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/WeiRen0/Scripts/main/wxds.js, tag=微信读书VIP, update-interval=172800, opt-parser=true, enabled=true
 
 # Keep VIP
-https://yfamily.vercel.app/rewrite/keep.conf, tag=Keep, update-interval=172800, opt-parser=false, enabled=true
+https://yfamily.vercel.app/rewrite/keep.conf, tag=Keep VIP, update-interval=172800, opt-parser=false, enabled=true
 
 #哔哩哔哩 1080P
 https://yfamily.vercel.app/rewrite/bili.conf, tag=Bilibili 1080P, update-interval=172800, opt-parser=false, enabled=true
