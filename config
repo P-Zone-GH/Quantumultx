@@ -1,6 +1,8 @@
 ;⚠️注意⚠️: 以下内容中，带“;” “#”的都是注释符号，去掉前面的符号，该行才有效
 
 ;general 模块内为一些通用的设置参数项
+
+##图标备用📮✉️📪📬💫💬💥🔨🥼🚫🔰🙈🍎🎬📺🎱🍐🐝🦁💡🌵🐯🎸💻📽🌏🕹📡🦑🌟🐷🦒🐳🚦📵🎧💊🔓🚦🚥🐼⛔️🈲🌐🎯🖲️🐦🔞🎵📱🚀💳♻️🙈🍱🔂📦🔀⏱
 [general]
 ;配置文件图标
 profile_img_url= https://raw.githubusercontent.com/P-Zone-GH/Quantumultx/main/image/%E6%82%9F%E7%A9%BA.png
@@ -240,8 +242,12 @@ https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/Rewrite_lhie1
 # YouTube去广告
 https://raw.githubusercontent.com/Maasea/sgmodule/master/YoutubeAds.sgmodule, tag=YouTube去广告, update-interval=432000, opt-parser=true, enabled=true
 
+# 小红书去广告
+https://raw.githubusercontent.com/Moli-X/Resources/main/Rewrite/XHS.conf, tag=小红书, update-interval=172800, opt-parser=true, enabled=true
+
 # 京东淘宝比价
 # https://raw.githubusercontent.com/Orz-3/QuantumultX/master/JD_TB_price.conf, tag=比价脚本, update-interval=432000, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/zwf234/rules/master/QuantumultX/price.conf, tag=京东淘宝比价, update-interval=172800, opt-parser=true, enabled=true
 
 # TestFlight区域限制解除
 https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/TestFlightDownload.conf , tag=TestFlight区域限制解除, update-interval=432000, opt-parser=false, enabled=true
@@ -258,6 +264,9 @@ https://raw.githubusercontent.com/Semporia/TikTok-Unlock/master/Quantumult-X/Tik
 
 # Spotify premium
 https://raw.githubusercontent.com/app2smile/rules/master/module/spotify.conf, tag=Spotify, update-interval=432000, opt-parser=false, enabled=true
+
+# 微信读书VIP
+https://raw.githubusercontent.com/WeiRen0/Scripts/main/wxds.js, tag=微信读书, update-interval=172800, opt-parser=true, enabled=true
 
 # 应用去广告
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/smzdm/smzdm_remove_ads.qxrewrite, tag=什么值得买去广告@blackmatrix7, update-interval=432000, opt-parser=false, enabled=true
