@@ -284,7 +284,7 @@ https://github.com/ddgksf2013/Rewrite/raw/master/AdBlock/StartUp.conf, tag=墨�
 https://raw.githubusercontent.com/fmz200/wool_scripts/main/QuantumultX/rewrite/chongxie.txt#out=youtube+xima+kuwo, tag=fmz200去APP广告, update-interval=432000, opt-parser=true, enabled=true
 
 # Orz-3批量获取cookies
-https://raw.githubusercontent.com/Orz-3/QuantumultX/master/JS_GetCookie.conf, tag=Qrz-3获取cookies, update-interval=432000, opt-parser=true, enabled=false
+;https://raw.githubusercontent.com/Orz-3/QuantumultX/master/JS_GetCookie.conf, tag=Qrz-3获取cookies, update-interval=432000, opt-parser=true, enabled=false
 
 #服务器远程订阅
 [server_remote]
@@ -296,11 +296,12 @@ https://raw.githubusercontent.com/Orz-3/QuantumultX/master/JS_GetCookie.conf, ta
 
 #支持本地/iCloud的节点文件，位于Quantumult X/Profiles路径下
 ;servers.txt, tag=本地服务器, img-url=https://raw.githubusercontent.com/crossutility/Quantumult-X/master/quantumult-x.png, enabled=false
-https://xray.p-zone.cyou/s/default/61a4e862e94e79289a0a8854503ac8e2, tag=P.Zone, tls-verification=true, fast-open=true, udp-relay=true, aead=true, img-url=p.circle.system, update-interval=86400, opt-parser=true, enable=true
 
-https://v2ray.neocities.org/v2ray.txt, tag=JDY, tls-verification=true, fast-open=true, udp-relay=true, aead=true, img-url=icloud.system, update-interval=86400, opt-parser=true, enable=true
+https://xray.p-zone.cyou/s/default/61a4e862e94e79289a0a8854503ac8e2#tfo=1&udp=1&aead=1&emoji=2, tag=P.Zone, img-url=p.circle.system, update-interval=86400, opt-parser=true, enable=true
 
-http://suburl.link/905950, tag=JDY-VIP, tls-verification=true, fast-open=true, udp-relay=true, aead=true, img-url=v.circle.system, update-interval=86400, opt-parser=true, enable=true
+https://v2ray.neocities.org/v2ray.txt#tfo=1&udp=1&aead=1&emoji=2, tag=JDY, img-url=icloud.system, update-interval=86400, opt-parser=true, enable=true
+
+http://suburl.link/905950#tfo=1&udp=1&aead=1&emoji=2, tag=JDY-VIP, img-url=v.circle.system, update-interval=86400, opt-parser=true, enable=true
 
 
 # 本地服务器部分
