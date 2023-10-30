@@ -296,11 +296,11 @@ https://raw.githubusercontent.com/Orz-3/QuantumultX/master/JS_GetCookie.conf, ta
 
 #支持本地/iCloud的节点文件，位于Quantumult X/Profiles路径下
 ;servers.txt, tag=本地服务器, img-url=https://raw.githubusercontent.com/crossutility/Quantumult-X/master/quantumult-x.png, enabled=false
-https://xray.p-zone.cyou/s/default/61a4e862e94e79289a0a8854503ac8e2, tag=P.Zone, tls-verification=true, fast-open=true, udp-relay=true,  aead=true, img-url=p.circle.system, update-interval=86400, opt-parser=true, enable=true
+https://xray.p-zone.cyou/s/default/61a4e862e94e79289a0a8854503ac8e2, tag=P.Zone, tls-verification=true, fast-open=true, udp-relay=true, aead=true, img-url=p.circle.system, update-interval=86400, opt-parser=true, enable=true
 
-https://v2ray.neocities.org/v2ray.txt, tag=JDY, tls-verification=true, fast-open=true, udp-relay=true,  aead=true, img-url=icloud.system, update-interval=86400, opt-parser=true, enable=true
+https://v2ray.neocities.org/v2ray.txt, tag=JDY, tls-verification=true, fast-open=true, udp-relay=true, aead=true, img-url=icloud.system, update-interval=86400, opt-parser=true, enable=true
 
-http://suburl.link/905950, tag=JDY-VIP, tls-verification=true, fast-open=true, udp-relay=true,  aead=true, img-url=v.circle.system, update-interval=86400, opt-parser=true, enable=true
+http://suburl.link/905950, tag=JDY-VIP, tls-verification=true, fast-open=true, udp-relay=true, aead=true, img-url=v.circle.system, update-interval=86400, opt-parser=true, enable=true
 
 
 # 本地服务器部分
