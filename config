@@ -297,7 +297,7 @@ https://raw.githubusercontent.com/fmz200/wool_scripts/main/QuantumultX/rewrite/c
 #支持本地/iCloud的节点文件，位于Quantumult X/Profiles路径下
 ;servers.txt, tag=本地服务器, img-url=https://raw.githubusercontent.com/crossutility/Quantumult-X/master/quantumult-x.png, enabled=false
 
-https://xray.p-zone.cyou/s/default/61a4e862e94e79289a0a8854503ac8e2#tfo=1&udp=1&emoji=1, tag=P.Zone, img-url=p.circle.system, update-interval=86400, opt-parser=true, enable=true
+https://xray.p-zone.cyou/s/default/61a4e862e94e79289a0a8854503ac8e2, tag=P.Zone, img-url=p.circle.system, update-interval=86400, opt-parser=true, enable=true
 
 https://v2ray.neocities.org/v2ray.txt#tfo=1&udp=1&emoji=1, tag=JDY, img-url=icloud.system, update-interval=86400, opt-parser=true, enable=true
 
