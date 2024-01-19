@@ -256,10 +256,10 @@ https://raw.githubusercontent.com/zwf234/rules/master/QuantumultX/price.conf, ta
 https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/TestFlightDownload.conf , tag=TestFlight区域限制解除, update-interval=432000, opt-parser=false, enabled=true
 
 # Sub-Store订阅管理器
-https://raw.githubusercontent.com/Peng-YM/Sub-Store/master/config/QX.snippet, tag=Sub-Store订阅管理, update-interval=432000, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/sub-store-org/Sub-Store/master/config/QX.snippet, tag=Sub-Store订阅管理, update-interval=432000, opt-parser=false, enabled=true
 
 # BoxJs脚本管理
-https://raw.githubusercontent.com/chavyleung/scripts/master/box/rewrite/boxjs.rewrite.quanx.conf, tag=BoxJs脚本管理, update-interval=432000, opt-parser=false, enabled=true
+https://github.com/chavyleung/scripts/raw/master/box/rewrite/boxjs.rewrite.quanx.conf, tag=BoxJs脚本管理, update-interval=172800, opt-parser=false, enabled=true
 
 # TikTok美区
 https://raw.githubusercontent.com/Semporia/TikTok-Unlock/master/Quantumult-X/TikTok-US.conf, tag=TikTok, update-interval=86400, opt-parser=false, enabled=true
