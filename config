@@ -5,7 +5,7 @@
 ##图标备用📮✉️📪📬💫💬💥🔨🥼🚫🔰🙈🍎🎬📺🎱🍐🐝🦁💡🌵🐯🎸💻📽🌏🕹📡🦑🌟🐷🦒🐳🚦📵🎧💊🔓🚦🚥🐼⛔️🈲🌐🎯🖲️🐦🔞🎵📱🚀💳♻️🙈🍱🔂📦🔀⏱
 [general]
 ;配置文件图标
-profile_img_url= https://raw.githubusercontent.com/P-Zone-GH/Quantumultx/main/image/%E6%82%9F%E7%A9%BA.png
+profile_img_url= https://raw.githubusercontent.com/P-Zone-GH/Quantumultx/master/image/悟空.png
 ;Quantumult X 会对 server_check_url 指定的网址进行相应测试，以确认节点的可用性
 ;你同样可以在 server_local/remote 中，为节点、订阅单独指定server_check_url参数
 server_check_url= http://www.google.com/generate_204
