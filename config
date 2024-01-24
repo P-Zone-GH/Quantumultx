@@ -219,6 +219,9 @@ https://raw.githubusercontent.com/DivineEngine/Profiles/master/Surge/Ruleset/Chi
 # TikTok
 https://raw.githubusercontent.com/Semporia/TikTok-Unlock/master/Quantumult-X/TikTok.list, tag=TikTok, force-policy=proxy, update-interval=86400, opt-parser=false, enabled=true
 
+# OpenAI
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/OpenAI/OpenAI.list, tag=OpenAI, force-policy=proxy, update-interval=86400, opt-parser=true, enabled=true
+
 #支持本地/iCloud规则文件，位于Quantumult X/Profiles路径下
 ;filter.txt, tag=本地分流, enabled=false
 
