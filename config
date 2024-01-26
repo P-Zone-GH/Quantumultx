@@ -313,7 +313,7 @@ http://suburl.link/905950#tfo=1&udp=1&aead=1&emoji=1, tag=JDY-VIP, img-url=v.cir
 
 # 本地服务器部分
 [server_local]
-vmess = 141.101.123.246:443, method=aes-128-gcm, password=a09ab230-d8fb-44ec-a2f1-3953818d67e4, obfs-host=proxy-free.p-zone.cyou, obfs=wss, obfs-uri=/pzonevws, tls-verification=true, fast-open=true, udp-relay=true,  aead=true, tag=[Vmess] Telecom-CDN
+vmess = 104.19.213.139:443, method=aes-128-gcm, password=a09ab230-d8fb-44ec-a2f1-3953818d67e4, obfs-host=proxy-free.p-zone.cyou, obfs=wss, obfs-uri=/pzonevws, tls-verification=true, fast-open=true, udp-relay=true,  aead=true, tag=[Vmess] Telecom-CDN
 vmess = 104.16.152.177:443, method=aes-128-gcm, password=a09ab230-d8fb-44ec-a2f1-3953818d67e4, obfs-host=proxy-free.p-zone.cyou, obfs=wss, obfs-uri=/pzonevws, tls-verification=true, fast-open=true, udp-relay=true,  aead=true, tag=[Vmess] Mobile-CDN
 
 
