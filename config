@@ -272,7 +272,6 @@ https://raw.githubusercontent.com/app2smile/rules/master/module/spotify.conf, ta
 
 # 🍿️DualSubs
 https://raw.githubusercontent.com/DualSubs/Spotify/main/modules/DualSubs.Spotify.snippet, tag=Spotify歌词增强及双语模块, update-interval=172800, opt-parser=false, enabled=true
-https://raw.githubusercontent.com/DualSubs/YouTube/main/modules/DualSubs.YouTube.snippet, tag=YouTube字幕&歌词增强及双语模块(兼容), update-interval=172800, opt-parser=false, enabled=true
 
 # 微信读书VIP
 https://raw.githubusercontent.com/WeiRen0/Scripts/main/wxds.js, tag=微信读书VIP, update-interval=172800, opt-parser=true, enabled=true
