@@ -324,6 +324,7 @@ vmess = 104.16.152.177:443, method=aes-128-gcm, password=a09ab230-d8fb-44ec-a2f1
 
 // 完整域名匹配
 ;host, www.google.com, proxy
+host, loc.map.baidu.com, direct
 // 域名关键词匹配
 ;host-keyword, adsite, reject
 // 域名后缀匹配
