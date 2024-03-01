@@ -48,7 +48,7 @@ excluded_routes=239.255.255.250/32, 24.105.30.129/32, 185.60.112.157/32, 185.60.
 ;no-system
 
 # 禁用 IPv6
-no-ipv6
+# no-ipv6
 
 # 自定义 DNS
 # DNSPod Public DNS（腾讯）
