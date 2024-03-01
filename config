@@ -242,8 +242,8 @@ https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Rewrit
 # NobyDa去广告
 https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/Rewrite_lhie1.conf, tag=NobyDa去广告, update-interval=172800, opt-parser=true, enabled=true
 
-# YouTube去广告
-https://raw.githubusercontent.com/Maasea/sgmodule/master/YoutubeAds.sgmodule, tag=YouTube去广告, update-interval=172800, opt-parser=true, enabled=true
+# YouTube Enhance
+https://raw.githubusercontent.com/Maasea/sgmodule/master/YouTube.Enhance.sgmodule, tag=YouTube增强, update-interval=172800, opt-parser=true, enabled=true
 
 # 小红书去广告
 https://raw.githubusercontent.com/Moli-X/Resources/main/Rewrite/XHS.conf, tag=小红书去广告, update-interval=172800, opt-parser=true, enabled=true
