@@ -246,9 +246,6 @@ https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/Rewrite_lhie1
 https://raw.githubusercontent.com/Maasea/sgmodule/master/YouTube.Enhance.sgmodule, tag=YouTube增强, update-interval=172800, opt-parser=true, enabled=true
 https://raw.githubusercontent.com/DualSubs/YouTube/main/modules/DualSubs.YouTube.snippet, tag=油管字幕@DualSubs , update-interval=172800, opt-parser=false, enabled=true
 
-# 小红书去广告
-https://raw.githubusercontent.com/Moli-X/Resources/main/Rewrite/XHS.conf, tag=小红书去广告, update-interval=172800, opt-parser=true, enabled=true
-
 # 高德去广告
 https://yfamily.vercel.app/rewrite/gddt.conf, tag=高德去广告, update-interval=172800, opt-parser=true, enabled=true
 https://github.com/ddgksf2013/Rewrite/raw/master/AdBlock/Amap.conf, tag=高德地图净化[卸载重装]@ddgksf2013, update-interval=86400, opt-parser=false, enabled=true
@@ -274,15 +271,11 @@ https://raw.githubusercontent.com/app2smile/rules/master/module/spotify.conf, ta
 # 🍿️DualSubs
 https://raw.githubusercontent.com/DualSubs/Spotify/main/modules/DualSubs.Spotify.snippet, tag=Spotify歌词增强及双语模块, update-interval=172800, opt-parser=false, enabled=true
 
-# Keep VIP
-https://yfamily.vercel.app/rewrite/keep.conf, tag=Keep VIP, update-interval=172800, opt-parser=false, enabled=true
-
 #哔哩哔哩广告净化
 https://github.com/ddgksf2013/Rewrite/raw/master/AdBlock/Bilibili.conf, tag=哔哩哔哩广告净化@ddgksf2013, update-interval=86400, opt-parser=false, enabled=true
 
 # 应用去广告
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/smzdm/smzdm_remove_ads.qxrewrite, tag=什么值得买去广告@blackmatrix7, update-interval=172800, opt-parser=false, enabled=true
-https://github.com/app2smile/rules/raw/master/module/tieba-qx.conf, tag=百度贴吧超级去广告@app2smile, update-interval=172800, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/startup/startup.sgmodule, tag=开屏去广告, update-interval=172800, opt-parser=true, enabled=true
 https://github.com/ddgksf2013/Rewrite/raw/master/AdBlock/StartUp.conf, tag=墨鱼去开屏广告, update-interval=172800, opt-parser=true, enabled=true
 https://raw.githubusercontent.com/fmz200/wool_scripts/main/QuantumultX/rewrite/chongxie.txt#out=youtube+xima+kuwo, tag=fmz200去APP广告, update-interval=172800, opt-parser=true, enabled=true
@@ -336,7 +329,6 @@ vmess = 104.16.152.177:443, method=aes-128-gcm, password=a09ab230-d8fb-44ec-a2f1
 #手动添加的策略显示在这里
 host, ad.12306.cn, direct
 host, loc.map.baidu.com, direct
-
 
 
 // User-Agent 匹配
