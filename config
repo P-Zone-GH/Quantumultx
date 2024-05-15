@@ -6,6 +6,8 @@
 [general]
 ;配置文件图标
 profile_img_url= https://raw.githubusercontent.com/P-Zone-GH/Quantumultx/master/image/悟空.png
+
+
 ;Quantumult X 会对 server_check_url 指定的网址进行相应测试，以确认节点的可用性
 ;你同样可以在 server_local/remote 中，为节点、订阅单独指定server_check_url参数
 server_check_url= http://www.google.com/generate_204
@@ -41,6 +43,8 @@ dns_exclusion_list=*.cmpassport.com, *.jegotrip.com.cn, *.icitymobile.mobi, id6.
 ;下列表中的内容将不经过 QuantumultX的处理
 excluded_routes=239.255.255.250/32, 24.105.30.129/32, 185.60.112.157/32, 185.60.112.158/32, 182.162.132.1/32
 ;icmp_auto_reply=true
+
+udp_drop_list=443
 
 [dns]
 # 禁用系统 DNS
@@ -243,8 +247,9 @@ https://raw.githubusercontent.com/DivineEngine/Profiles/master/Quantumult/Rewrit
 https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/Rewrite_lhie1.conf, tag=NobyDa去广告, update-interval=172800, opt-parser=true, enabled=true
 
 # YouTube Enhance
-https://raw.githubusercontent.com/Maasea/sgmodule/master/YouTube.Enhance.sgmodule, tag=YouTube增强, update-interval=172800, opt-parser=true, enabled=true
-https://raw.githubusercontent.com/DualSubs/YouTube/main/modules/DualSubs.YouTube.snippet, tag=油管字幕@DualSubs , update-interval=172800, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/Maasea/sgmodule/master/YouTube.Enhance.sgmodule, tag=YouTube增强, update-interval=172800, opt-parser=true, enabled=false
+https://raw.githubusercontent.com/DualSubs/YouTube/main/modules/DualSubs.YouTube.snippet, tag=Youtube字幕@DualSubs , update-interval=172800, opt-parser=false, enabled=true
+https://raw.githubusercontent.com/RuCu6/QuanX/main/Rewrites/Cube/youtube.snippet, tag=Youtube去广告, update-interval=172800, opt-parser=false, enabled=true
 
 # 高德去广告
 https://yfamily.vercel.app/rewrite/gddt.conf, tag=高德去广告, update-interval=172800, opt-parser=true, enabled=true
