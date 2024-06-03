@@ -154,11 +154,11 @@ url-latency-benchmark=♻️ 优选节点, server-tag-regex=^((?!P.Zone|JDY|CDN)
 
 static=🌐 全球加速, 🚀 节点选择, direct, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/World_Map.png
 
-static=📨 Telegram, 🚀 节点选择, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Telegram.png
+;static=📨 Telegram, 🚀 节点选择, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Telegram.png
 
 static=🎶 Spotify, 🚀 节点选择, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Spotify.png
 
-static=🎬 YouTube, 🚀 节点选择, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/YouTube_Letter.png
+;static=🎬 YouTube, 🚀 节点选择, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/YouTube_Letter.png
 
 static=📽️ Streaming, 🚀 节点选择, img-url=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Streaming.png
 
@@ -245,7 +245,7 @@ https://raw.githubusercontent.com/ddgksf2013/Rewrite/master/Function/UnblockURLi
 https://raw.githubusercontent.com/Orz-3/QuantumultX/master/Netflix_ratings.conf, tag=Netflix评分@Orz-3, update-interval=86400, opt-parser=false, enabled=false
 https://raw.githubusercontent.com/id77/QuantumultX/master/rewrite/Youtube_CC.conf#out=Hant, tag=油管字幕翻译@id77, update-interval=86400, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/chavyleung/scripts/master/box/rewrite/boxjs.rewrite.quanx.conf, tag=BoxJS商店版@chavyleung, update-interval=86400, opt-parser=false, enabled=false
-
+https://raw.githubusercontent.com/Semporia/TikTok-Unlock/master/Quantumult-X/TikTok-US.conf, tag=TikTok, update-interval=86400, opt-parser=false, enabled=true
 
 
 #服务器远程订阅
