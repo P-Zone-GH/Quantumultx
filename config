@@ -224,7 +224,7 @@ https://github.com/app2smile/rules/raw/master/module/tieba-qx.conf, tag=百度�
 https://github.com/ddgksf2013/Rewrite/raw/master/AdBlock/Applet.conf, tag=微信小程序去除广告[墨鱼版], update-interval=86400, opt-parser=false, enabled=true
 https://github.com/ddgksf2013/Rewrite/raw/master/AdBlock/YoutubeAds.conf, tag=油管去广告@Maasea, update-interval=86400, opt-parser=false, enabled=true
 https://github.com/ddgksf2013/Rewrite/raw/master/AdBlock/Ximalaya.conf, tag=喜马拉雅净化[墨鱼版], update-interval=86400, opt-parser=false, enabled=true
-https://github.com/ddgksf2013/Rewrite/raw/master/AdBlock/AmapAds.conf, tag=高德地图净化[墨鱼版], update-interval=86400, opt-parser=false, enabled=true
+https://github.com/ddgksf2013/Rewrite/raw/master/AdBlock/AmapAds.conf, tag=高德地图净化[墨鱼版], update-interval=86400, opt-parser=true, enabled=true
 https://github.com/ddgksf2013/Rewrite/raw/master/AdBlock/NeteaseAds.conf, tag=网易云音乐净化[墨鱼版], update-interval=86400, opt-parser=false, enabled=true
 https://github.com/ddgksf2013/Rewrite/raw/master/AdBlock/SmzdmAds.conf, tag=什么值得买净化[墨鱼版], update-interval=86400, opt-parser=false, enabled=true
 https://github.com/ddgksf2013/Rewrite/raw/master/AdBlock/KeepAds.conf, tag=Keep应用净化[墨鱼版], update-interval=86400, opt-parser=false, enabled=true
@@ -233,7 +233,7 @@ https://github.com/ddgksf2013/Rewrite/raw/master/AdBlock/KeepAds.conf, tag=Keep�
 # ======= 功能增强 ======= #
 https://github.com/ddgksf2013/Rewrite/raw/master/AdBlock/XiaoHongShuAds.conf, tag=小红书净化+去水印@ddgksf2013, update-interval=86400, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/ddgksf2013/Rewrite/master/Function/UnblockURLinWeChat.conf, tag=微信110解锁被屏蔽的URL, update-interval=86400, opt-parser=false, enabled=true
-https://github.com/ddgksf2013/Modules/raw/main/JD_Price.sgmodule, tag=京东历史比价, update-interval=86400, opt-parser=false, enabled=true
+https://github.com/ddgksf2013/Modules/raw/main/JD_Price.sgmodule, tag=京东历史比价, update-interval=86400, opt-parser=true, enabled=true
 
 
 # ======= 自行启用 ======= #
