@@ -233,7 +233,7 @@ https://github.com/ddgksf2013/Rewrite/raw/master/AdBlock/KeepAds.conf, tag=Keep�
 # ======= 功能增强 ======= #
 https://github.com/ddgksf2013/Rewrite/raw/master/AdBlock/XiaoHongShuAds.conf, tag=小红书净化+去水印@ddgksf2013, update-interval=86400, opt-parser=false, enabled=true
 https://raw.githubusercontent.com/ddgksf2013/Rewrite/master/Function/UnblockURLinWeChat.conf, tag=微信110解锁被屏蔽的URL, update-interval=86400, opt-parser=false, enabled=true
-https://github.com/ddgksf2013/Modules/raw/main/JD_Price.sgmodule, tag=京东历史比价, update-interval=86400, opt-parser=true, enabled=true
+https://raw.githubusercontent.com/wf021325/qx/master/js/jd_price.js, tag=京东历史比价, update-interval=86400, opt-parser=true, enabled=true
 
 
 # ======= 自行启用 ======= #
