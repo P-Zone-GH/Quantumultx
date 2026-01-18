@@ -213,7 +213,6 @@ https://raw.githubusercontent.com/Semporia/TikTok-Unlock/master/Quantumult-X/Tik
 # opt-parser=true/false 用于控制是否对本订阅 开启资源解析器，不写或者 false 表示不启用解析器;
 
 # ======= 会员解锁 ======= #
-https://github.com/ddgksf2013/Rewrite/raw/master/AdBlock/BilibiliAds.conf, tag=哔哩哔哩广告净化[墨鱼版], update-interval=86400, opt-parser=false, enabled=true
 https://github.com/ddgksf2013/Rewrite/raw/master/UnlockVip/Spotify.conf, tag=Spotify会员, update-interval=86400, opt-parser=false, enabled=true
 https://github.com/ddgksf2013/dev/raw/master/ForOwnUse.conf, tag=墨鱼专属VIP, update-interval=86400, opt-parser=false, enabled=true
 
