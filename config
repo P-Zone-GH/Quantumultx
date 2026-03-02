@@ -185,7 +185,6 @@ static=👮 Guard, reject, direct, img-url=https://raw.githubusercontent.com/Koo
 [filter_remote]
 #远程分流模块，可使用force-policy来强制使用策略偏好, 替换远程规则内所指定的策略组
 
-https://github.com/ddgksf2013/Filter/raw/master/NeteaseMusic.list, tag=解锁网易云音乐, force-policy=🎶 Spotify, update-interval=172800, opt-parser=false, enabled=false
 https://raw.githubusercontent.com/ddgksf2013/Filter/master/Unbreak.list, tag=规则修正, force-policy=direct, update-interval=172800, opt-parser=true, enabled=true
 https://raw.githubusercontent.com/Cats-Team/AdRules/main/qx.conf, tag=广告终结者, force-policy=👮 Guard, update-interval=172800, opt-parser=true, enabled=true
 https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/WeChat/WeChat.list, tag=微信直连, force-policy=direct, update-interval=172800, opt-parser=false, enabled=true
